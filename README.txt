@@ -15,3 +15,5 @@ Il n'y a donc PLUS besoin d'envoyer un dossier assets.
 IMPORTANT :
 - Le fichier principal doit s'appeler exactement index.html.
 - Les anciens fichiers index-2.html et index-saillard-urgence.html ne servent pas au site et peuvent être supprimés plus tard.
+
+MISE À JOUR V2 : fond moins blanc + photo distincte pour Recherche de fuite et WC/plomberie.
