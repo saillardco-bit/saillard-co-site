@@ -1,11 +1,19 @@
-SAILLARD & CO – VERSION V9
-Ajout du service DÉBOUCHAGE DE CANALISATION :
-- nouvelle carte sur la page d'accueil
-- nouvelle page SEO debouchage-canalisation-lunel.html
-- ajout au formulaire de contact
-- ajout au pied de page
-- ajout au sitemap.txt et sitemap.xml
-- visuel dédié, différent des autres services
+SAILLARD & CO – VERSION V10 PREMIUM / CONVERSION
+
+Objectif : rendre le site plus accrocheur et donner davantage envie d'appeler.
+
+AMÉLIORATIONS :
+- hero plus premium et plus dynamique
+- meilleure hiérarchie visuelle
+- menu plus lisible
+- preuves de confiance juste sous le hero
+- cartes services plus modernes
+- animations hover légères
+- section méthode plus impactante
+- contact plus convaincant
+- pages services harmonisées avec la nouvelle charte
+- toujours aucune promesse de délai non garantie
+- aucune fausse note, aucun faux avis, aucune fausse certification
 
 MISE EN LIGNE :
 1. Décompresser le ZIP.
@@ -13,9 +21,6 @@ MISE EN LIGNE :
 3. Envoyer tous les fichiers.
 4. Commit changes.
 5. Attendre 1 à 3 minutes.
-6. Recharger avec Cmd + Shift + R.
-7. Dans Search Console, demander l'indexation de :
-   https://saillardco-bit.github.io/saillard-co-site/debouchage-canalisation-lunel.html
+6. Cmd + Shift + R.
 
-IMPORTANT :
-Ne supprimez pas le fichier google*.html déjà présent dans GitHub.
+Ne supprimez pas le fichier google*.html de validation Search Console déjà présent dans GitHub.
