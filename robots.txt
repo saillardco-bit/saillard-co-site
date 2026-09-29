@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://julien34-bit.github.io/depanage-habitat/sitemap.xml

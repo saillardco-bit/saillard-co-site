@@ -1,18 +1,8 @@
-SAILLARD & CO – SITE VITRINE SEO LOCAL
+SITE SAILLARD & CO – VERSION DÉFINITIVE
+1. Décompresser le ZIP.
+2. Envoyer TOUS les fichiers et le dossier assets dans le dépôt GitHub.
+3. Remplacer les anciens fichiers portant les mêmes noms.
+4. Faire Commit changes.
+5. Attendre 1 à 3 minutes puis recharger le site avec Cmd+Shift+R.
 
-1) Ouvrir assets/config.js et remplacer :
-- téléphone
-- e-mail
-- éventuellement le nom/domaine
-
-2) Remplacer toutes les occurrences de https://www.votre-domaine.fr par le vrai domaine.
-3) Mettre le dossier sur un hébergement statique.
-4) Dans Google Search Console : ajouter le domaine et envoyer /sitemap.xml.
-5) Dans la fiche Google Business Profile : garder UNE fiche si l'activité est une entreprise de services de proximité et renseigner la zone desservie réelle.
-6) Ajouter régulièrement de vraies photos de chantiers, avant/après, et demander des avis clients authentiques.
-
-IMPORTANT :
-- Les pages locales sont conçues pour être utiles, pas pour bourrer des mots-clés.
-- Ne pas créer de fausses adresses ou fausses implantations à Montpellier/Nîmes.
-- Ne pas promettre une disponibilité 24/7 si elle n'est pas réelle.
-- Compléter les mentions légales avec SIRET et hébergeur.
+IMPORTANT : au premier envoi via le formulaire FormSubmit, un e-mail de confirmation peut être envoyé à saillard.co@gmail.com.
