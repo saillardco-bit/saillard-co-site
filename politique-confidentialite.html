@@ -16,13 +16,13 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .container{width:min(1120px,calc(100% - 32px));margin:auto}
 .topbar{background:linear-gradient(90deg,var(--urgent),var(--urgent2));color:#fff;font-weight:800}
-.topbar .container{display:flex;justify-content:center;gap:10px;align-items:center;padding:9px 0;text-align:center}
+.topbar .container{display:flex;justify-content:center;gap:10px;align-items:center;padding:11px 0;text-align:center;font-size:1rem;letter-spacing:.01em}
 .header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid #e6ecea}
-.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{font-weight:900;letter-spacing:-.02em}
-.brand small{display:block;color:var(--muted);font-size:.74rem;font-weight:700}
-.navlinks{display:flex;gap:20px;align-items:center;font-weight:700;font-size:.95rem}
-.callbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 18px;font-weight:900;border:0;cursor:pointer}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:950;letter-spacing:-.025em;font-size:1.18rem}
+.brand small{display:block;color:var(--muted);font-size:.82rem;font-weight:750;margin-top:3px}
+.navlinks{display:flex;gap:28px;align-items:center;font-weight:850;font-size:1.08rem}
+.callbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:14px 20px;font-weight:900;border:0;cursor:pointer;font-size:1rem}
 .callbtn{background:#e03131;color:#fff;box-shadow:0 10px 24px rgba(224,49,49,.23)}
 .btn-primary{background:var(--primary);color:#fff}
 .btn-light{background:#fff;color:var(--ink);border:1px solid var(--line)}
@@ -76,21 +76,21 @@ textarea{min-height:110px;resize:vertical}
 .mobilebar{display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:50;background:#fff;border:1px solid var(--line);box-shadow:0 15px 40px rgba(15,23,42,.22);border-radius:18px;padding:8px;gap:8px}
 .mobilebar a{flex:1;text-align:center;padding:12px 8px;border-radius:13px;font-weight:950}
 .mobilebar .call{background:var(--urgent);color:#fff}.mobilebar .mail{background:var(--primary);color:#fff}
-.subhero{padding:48px 0;background:linear-gradient(180deg,#fff,#f1f5f9)}
-.subhero h1{font-size:clamp(2.2rem,5vw,4rem)}
-.breadcrumb{font-size:.9rem;color:var(--muted);font-weight:700}
-.content{max-width:800px}
-.content h2{margin-top:34px}
-.content ul{padding-left:20px}
-.notice{background:#fff7ed;border:1px solid #fed7aa;border-radius:15px;padding:16px}
+.subhero{padding:58px 0;background:linear-gradient(135deg,#0b2b33 0%,#0f4a49 62%,#123e45 100%);color:#fff;position:relative;overflow:hidden}
+.subhero h1{font-size:clamp(2.4rem,5vw,4.35rem);line-height:1.02;margin:14px 0 16px;color:#fff}
+.breadcrumb{font-size:.95rem;color:#c9dddd;font-weight:800}
+.content{max-width:940px;background:#ffffff;border:1px solid #d9e5e1;border-radius:24px;padding:34px 38px;box-shadow:0 18px 48px rgba(15,23,42,.10)}
+.content h2{margin-top:34px;color:#0d3a40;font-size:1.7rem;letter-spacing:-.02em}
+.content ul{padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 28px}.content li{background:#eef5f3;border:1px solid #d8e7e3;border-radius:14px;padding:13px 15px;font-weight:750}.content li:before{content:'✓';color:#0f766e;font-weight:950;margin-right:8px}
+.notice{background:linear-gradient(135deg,#fff4e6,#fff8ef);border:1px solid #f5c98d;border-left:5px solid #f59e0b;border-radius:16px;padding:18px 20px}
 @media(max-width:880px){
   .navlinks{display:none}.hero-grid,.form-wrap{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr 1fr}
   .hero{padding-top:40px}.urgent-card{order:2}.mobilebar{display:flex}.footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){
-  .cards,.steps,.footer-grid,.quick-grid{grid-template-columns:1fr}
+  .cards,.steps,.footer-grid,.quick-grid{grid-template-columns:1fr}.content ul{grid-template-columns:1fr}.content{padding:24px 20px}
   .container{width:min(100% - 22px,1120px)}.nav{min-height:64px}
-  .header .callbtn{padding:10px 13px;font-size:.88rem}
+  .header .callbtn{padding:11px 14px;font-size:.92rem}.brand{font-size:1rem}.brand small{font-size:.72rem}
   h1{font-size:2.65rem}.hero p{font-size:1.05rem}.section{padding:52px 0}
 }
 
@@ -122,9 +122,9 @@ textarea{min-height:110px;resize:vertical}
 .visual-caption{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}
 .visual-caption strong{display:block;font-size:1.1rem}.visual-caption small{opacity:.88}
 .service-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
-.service-image{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);min-height:330px;background:#e2e8f0}
+.service-image{border-radius:22px;overflow:hidden;box-shadow:0 24px 58px rgba(0,0,0,.24);min-height:330px;background:#e2e8f0;border:1px solid rgba(255,255,255,.22)}
 .service-image img{width:100%;height:100%;min-height:330px;object-fit:cover}
-.stock-note{font-size:.8rem;color:#64748b;margin-top:8px}
+.stock-note{font-size:.82rem;color:#c8dddd;margin-top:9px}
 @media(max-width:880px){.hero-visual{min-height:320px}.hero-visual img{min-height:320px}.visual-grid{grid-template-columns:1fr 1fr}.visual-tile:first-child{grid-column:1/-1}.service-hero-grid{grid-template-columns:1fr}}
 @media(max-width:620px){.visual-grid{grid-template-columns:1fr}.visual-tile:first-child{grid-column:auto}.visual-tile{min-height:240px}.hero-visual,.hero-visual img{min-height:280px}}
 
@@ -145,7 +145,7 @@ textarea{min-height:110px;resize:vertical}
   </div>
 </header>
 <main><section class="subhero"><div class="container"><h1>Politique de confidentialité</h1></div></section>
-<section class="section alt"><div class="container content">
+<section class="section alt" style="background:linear-gradient(180deg,#dfeae7 0%,#edf3f1 100%)"><div class="container content">
 <p>Les informations envoyées via le formulaire de contact servent uniquement à répondre à votre demande de dépannage ou de devis.</p>
 <p>Les données demandées peuvent inclure votre nom, votre téléphone, votre commune et le détail de votre demande.</p>
 <p>Le formulaire utilise actuellement le service FormSubmit pour transmettre les messages à l’adresse saillard.co@gmail.com. N’envoyez pas d’informations sensibles inutiles.</p>
