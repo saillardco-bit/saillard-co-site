@@ -1,129 +1,416 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#12343b">
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d3038">
 <title>Dépannage urgence Lunel & Montpellier | Saillard & Co</title>
 <meta name="description" content="Dépannage habitat à Lunel, Montpellier et Nîmes : fuite d'eau, chauffe-eau, WC, plomberie, petite panne électrique, dégâts des eaux et rénovation intérieure.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://saillardco-bit.github.io/saillard-co-site/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Saillard & Co – Dépannage habitat", "telephone": "+33603752324", "email": "saillard.co@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lunel", "postalCode": "34400", "addressCountry": "FR"}, "areaServed": ["Lunel", "Montpellier", "Nîmes"], "url": "https://saillardco-bit.github.io/saillard-co-site/", "description": "Dépannage habitat à Lunel, Montpellier et Nîmes : fuite d’eau, chauffe-eau, WC, plomberie, petite panne électrique, dégâts des eaux et rénovation intérieure."}</script>
 <style>
 :root{
- --ink:#10212a;--muted:#60727a;--line:#d9e2e2;--bg:#f3f6f5;--white:#fff;
- --deep:#11343b;--deep2:#0d2a30;--green:#1b7a72;--red:#df342f;--amber:#f3a83a;
- --shadow:0 18px 48px rgba(16,33,42,.12);
+  --ink:#10212a;
+  --muted:#5f7179;
+  --deep:#0d3038;
+  --deep2:#123e46;
+  --teal:#1f7b73;
+  --teal2:#145f59;
+  --red:#e43a32;
+  --soft:#e5efec;
+  --soft2:#f2f6f5;
+  --line:#d3e0dd;
+  --white:#ffffff;
+  --amber:#f4b24d;
+  --shadow:0 18px 50px rgba(12,33,39,.12);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--soft2);
+  line-height:1.55;
+}
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%}
-.container{width:min(1160px,calc(100% - 36px));margin:auto}
+.container{width:min(1160px,calc(100% - 40px));margin:auto}
 
+/* TOP */
 .topbar{background:var(--red);color:#fff}
-.topbar .container{min-height:34px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:.82rem;font-weight:800;letter-spacing:.01em}
+.topbar .container{
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-size:15px;
+  font-weight:900;
+  text-align:center;
+}
+.header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.98);
+  border-bottom:1px solid #e3ebea;
+  backdrop-filter:blur(12px);
+}
+.nav{
+  min-height:86px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.brand{
+  font-size:22px;
+  line-height:1;
+  font-weight:950;
+  letter-spacing:-.03em;
+}
+.brand small{
+  display:block;
+  margin-top:7px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:0;
+}
+.navlinks{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:17px;
+  font-weight:900;
+}
+.navlinks a{padding:10px 2px}
+.navlinks a:hover{color:var(--teal)}
+.call-top{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--red);
+  color:#fff;
+  border-radius:999px;
+  padding:14px 20px;
+  font-size:16px;
+  font-weight:950;
+  box-shadow:0 10px 28px rgba(228,58,50,.24);
+}
 
-.header{background:#fff;border-bottom:1px solid #e7eded;position:sticky;top:0;z-index:40}
-.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-weight:950;font-size:1.02rem;letter-spacing:-.02em;line-height:1.05}
-.brand small{display:block;font-size:.68rem;color:var(--muted);font-weight:700;margin-top:4px}
-.navlinks{display:flex;align-items:center;gap:26px;font-size:.84rem;font-weight:850}
-.header-call{background:var(--red);color:#fff;border-radius:999px;padding:11px 16px;font-size:.84rem;font-weight:900;box-shadow:0 8px 22px rgba(223,52,47,.22)}
-
-.hero{background:linear-gradient(135deg,var(--deep2),var(--deep));color:#fff;padding:54px 0}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);padding:7px 11px;border-radius:999px;font-size:.76rem;font-weight:900;letter-spacing:.03em}
-h1{font-size:clamp(2.45rem,5.2vw,4.65rem);line-height:.98;letter-spacing:-.055em;margin:18px 0 20px;max-width:720px}
-.hero p{font-size:1.05rem;color:#d5e2e4;max-width:710px;margin:0}
-.hero strong{color:#fff}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 20px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 18px;font-weight:900}
+/* HOME HERO */
+.hero{
+  background:linear-gradient(135deg,#0b2a32 0%,#103c44 58%,#164d50 100%);
+  color:#fff;
+  padding:58px 0 56px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:52px;
+  align-items:center;
+}
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.08);
+  border-radius:999px;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+h1{
+  margin:20px 0 18px;
+  font-size:clamp(44px,5.2vw,72px);
+  line-height:.98;
+  letter-spacing:-.055em;
+}
+.hero p{max-width:720px;color:#d6e4e5;font-size:18px;margin:0}
+.hero p strong{color:#fff}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  padding:14px 20px;
+  font-size:16px;
+  font-weight:950;
+}
 .btn-call{background:var(--red);color:#fff}
 .btn-light{background:#fff;color:var(--ink)}
-.trust{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem;color:#d8e4e5;font-weight:750}
+.trust{display:flex;gap:18px;flex-wrap:wrap;color:#d8e5e6;font-size:15px;font-weight:800}
+.hero-card{
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  color:var(--ink);
+  box-shadow:0 26px 70px rgba(0,0,0,.24);
+}
+.hero-card img{height:330px;object-fit:cover}
+.hero-card-body{padding:22px}
+.hero-card h2{font-size:28px;margin:0 0 6px}
+.hero-card p{color:var(--muted);font-size:16px}
+.hero-phone{
+  display:block;
+  margin-top:16px;
+  background:var(--red);
+  color:#fff;
+  text-align:center;
+  padding:14px;
+  border-radius:13px;
+  font-size:18px;
+  font-weight:950;
+}
 
-.hero-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.24);color:var(--ink)}
-.hero-card img{height:340px;object-fit:cover}
-.hero-card-body{padding:20px}
-.hero-card h2{margin:0 0 5px;font-size:1.35rem}
-.hero-card p{color:var(--muted);font-size:.95rem}
-.hero-phone{display:block;margin-top:14px;background:var(--red);color:#fff;text-align:center;padding:13px;border-radius:12px;font-weight:950}
+/* HOME SECTIONS */
+.section{padding:72px 0}
+.section-soft{background:var(--soft)}
+.section-white{background:#fff}
+.section-dark{background:var(--deep);color:#fff}
+.section-head{max-width:780px;margin-bottom:30px}
+.section-head h2{
+  margin:0 0 10px;
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.04;
+  letter-spacing:-.04em;
+}
+.section-head p{margin:0;color:var(--muted);font-size:17px}
+.section-dark .section-head p{color:#d3e2e3}
 
-.section{padding:66px 0}
-.section-soft{background:#e7efed}
-.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:0 0 9px}
-.section-head{max-width:760px;margin-bottom:28px}
-.section-head p{margin:0;color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(16,33,42,.07)}
-.card img{height:185px;object-fit:cover}
-.card-body{padding:18px}
-.card h3{margin:0 0 7px;font-size:1.15rem}
-.card p{color:var(--muted);margin:0 0 12px;font-size:.95rem}
-.more{color:var(--green);font-weight:900}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 12px 34px rgba(16,33,42,.08);
+}
+.card img{height:190px;object-fit:cover}
+.card-body{padding:20px}
+.card h3{margin:0 0 7px;font-size:21px}
+.card p{margin:0 0 13px;color:var(--muted);font-size:15px}
+.more{color:var(--teal);font-weight:950}
 
-.band{background:var(--deep);color:#fff}
-.band-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.band-item{padding:20px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10)}
-.band-item h3{margin:0 0 6px}
-.band-item p{margin:0;color:#d5e2e4;font-size:.94rem}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.process-item{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.11);
+  border-radius:18px;
+  padding:24px;
+}
+.process-item h3{font-size:22px;margin:0 0 7px}
+.process-item p{color:#d3e2e3;margin:0}
+.zones{display:flex;flex-wrap:wrap;gap:10px}
+.zones span{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 14px;
+  font-weight:850;
+}
 
-.zones{display:flex;flex-wrap:wrap;gap:9px}
-.zones span{background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:999px;font-weight:800;font-size:.88rem}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:28px;align-items:start}
+.contact-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:22px;
+  padding:24px;
+  box-shadow:var(--shadow);
+}
+label{display:block;margin:11px 0 5px;font-size:14px;font-weight:900}
+input,select,textarea{
+  width:100%;
+  padding:13px 14px;
+  border:1px solid #c8d7d4;
+  border-radius:11px;
+  background:#fff;
+  font:inherit;
+}
+textarea{min-height:110px;resize:vertical}
+.submit{
+  margin-top:14px;
+  border:0;
+  border-radius:12px;
+  background:var(--teal);
+  color:#fff;
+  padding:14px 18px;
+  font-weight:950;
+  font-size:16px;
+  cursor:pointer;
+}
 
-.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px;align-items:start}
-.contact-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
-label{display:block;font-size:.88rem;font-weight:850;margin:11px 0 5px}
-input,select,textarea{width:100%;padding:12px 13px;border:1px solid #cad7d4;border-radius:11px;font:inherit}
-textarea{min-height:105px;resize:vertical}
-.submit{margin-top:13px;border:0;background:var(--green);color:#fff;padding:13px 17px;border-radius:12px;font-weight:900;cursor:pointer}
+/* SERVICE PAGES */
+.service-hero{
+  background:linear-gradient(135deg,#0b2b33 0%,#0f4a49 62%,#123e45 100%);
+  color:#fff;
+  padding:62px 0;
+}
+.service-hero-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:42px;
+  align-items:center;
+}
+.breadcrumb{color:#cfe1e1;font-size:15px;font-weight:800;margin-bottom:14px}
+.service-hero h1{
+  margin:0 0 16px;
+  font-size:clamp(42px,5vw,66px);
+  line-height:1.02;
+}
+.service-hero p{font-size:18px;color:#d5e5e5;max-width:720px}
+.service-photo{
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 26px 60px rgba(0,0,0,.25);
+}
+.service-photo img{height:380px;object-fit:cover}
+.service-body{
+  background:linear-gradient(180deg,#dfeae7 0%,#edf3f1 100%);
+  padding:68px 0;
+}
+.service-layout{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:24px;
+  align-items:start;
+}
+.service-panel{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+.service-panel h2{
+  margin:0 0 12px;
+  color:#0c3a40;
+  font-size:30px;
+  letter-spacing:-.02em;
+}
+.service-panel p{color:var(--muted);font-size:16px}
+.service-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:0;
+  margin:20px 0 0;
+  list-style:none;
+}
+.service-list li{
+  background:#edf5f3;
+  border:1px solid #d7e6e2;
+  border-radius:14px;
+  padding:14px 15px;
+  font-weight:800;
+}
+.service-list li::before{content:"✓";color:var(--teal);font-weight:950;margin-right:8px}
+.sidebox{
+  background:var(--deep);
+  color:#fff;
+  border-radius:22px;
+  padding:26px;
+  box-shadow:var(--shadow);
+}
+.sidebox h3{font-size:26px;margin:0 0 7px}
+.sidebox p{color:#d5e3e4}
+.sidebox .btn-call{width:100%;margin-top:8px}
+.notice{
+  margin-top:18px;
+  background:#fff4e7;
+  border:1px solid #f1c98d;
+  border-left:5px solid var(--amber);
+  border-radius:15px;
+  padding:17px 18px;
+}
+.service-cta{
+  background:var(--deep);
+  color:#fff;
+  padding:50px 0;
+}
+.service-cta .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+}
+.service-cta h2{margin:0 0 5px;font-size:34px}
+.service-cta p{margin:0;color:#d3e2e3}
 
-.footer{background:#091d22;color:#c9d5d6;padding:38px 0 100px}
-.footer-grid{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:28px}
-.footer strong,.footer h3{color:#fff}
-.footer a{display:block;margin:5px 0}
+/* FOOTER */
+.footer{background:#081d22;color:#c7d5d6;padding:42px 0 100px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:30px}
+.footer h3,.footer strong{color:#fff}
+.footer a{display:block;margin:6px 0}
+.footer small{color:#90a6aa}
+
 .mobilebar{display:none}
 
+/* RESPONSIVE */
 @media(max-width:900px){
- .navlinks{display:none}
- .hero-grid,.contact{grid-template-columns:1fr}
- .cards{grid-template-columns:1fr 1fr}
- .band-grid{grid-template-columns:1fr}
- .hero-card img{height:300px}
+  .navlinks{display:none}
+  .hero-grid,.service-hero-grid,.contact-grid,.service-layout{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .process{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .service-photo img{height:320px}
 }
 @media(max-width:640px){
- .container{width:min(100% - 22px,1160px)}
- .topbar .container{font-size:.74rem;min-height:31px;text-align:center}
- .nav{min-height:61px}
- .brand{font-size:.94rem}
- .brand small{font-size:.63rem}
- .header-call{font-size:.76rem;padding:9px 12px}
- .hero{padding:40px 0}
- h1{font-size:2.55rem}
- .hero p{font-size:1rem}
- .cards{grid-template-columns:1fr}
- .footer-grid{grid-template-columns:1fr}
- .mobilebar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;background:#fff;border:1px solid var(--line);border-radius:16px;padding:7px;box-shadow:0 15px 45px rgba(0,0,0,.18);gap:7px}
- .mobilebar a{flex:1;text-align:center;padding:11px;border-radius:11px;font-weight:950}
- .mobilebar .call{background:var(--red);color:#fff}
- .mobilebar .mail{background:var(--green);color:#fff}
+  .container{width:min(100% - 22px,1160px)}
+  .topbar .container{min-height:38px;font-size:13px}
+  .nav{min-height:70px}
+  .brand{font-size:18px}
+  .brand small{font-size:12px;margin-top:4px}
+  .call-top{font-size:14px;padding:11px 14px}
+  .hero{padding:42px 0}
+  h1{font-size:44px}
+  .hero p,.service-hero p{font-size:16px}
+  .hero-card img{height:270px}
+  .cards,.footer-grid,.service-list{grid-template-columns:1fr}
+  .section{padding:54px 0}
+  .service-panel{padding:22px}
+  .service-cta .container{display:block}
+  .service-cta .btn{margin-top:18px}
+  .mobilebar{
+    display:flex;
+    position:fixed;
+    left:10px;right:10px;bottom:10px;
+    z-index:60;
+    padding:7px;
+    gap:7px;
+    border:1px solid var(--line);
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+  }
+  .mobilebar a{
+    flex:1;
+    text-align:center;
+    padding:11px;
+    border-radius:11px;
+    font-weight:950;
+  }
+  .mobilebar .call{background:var(--red);color:#fff}
+  .mobilebar .mail{background:var(--teal);color:#fff}
 }
 </style>
-</head>
-<body>
-<div class="topbar"><div class="container">🚨 Dépannage d’urgence 7j/7 selon disponibilité — <a href="tel:+33603752324">06 03 75 23 24</a></div></div>
+</head><body>
 
+<div class="topbar"><div class="container">🚨 Dépannage d’urgence 7j/7 selon disponibilité — <a href="tel:+33603752324">06 03 75 23 24</a></div></div>
 <header class="header">
   <div class="container nav">
     <a class="brand" href="index.html">Saillard & Co<small>Dépannage habitat • Lunel</small></a>
     <nav class="navlinks">
-      <a href="#services">Dépannages</a>
-      <a href="#renovation">Rénovation</a>
-      <a href="#zones">Secteur</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#services">Dépannages</a>
+      <a href="index.html#renovation">Rénovation</a>
+      <a href="index.html#zones">Secteur</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
-    <a class="header-call" href="tel:+33603752324">☎ Appeler maintenant</a>
+    <a class="call-top" href="tel:+33603752324">☎ Appeler maintenant</a>
   </div>
 </header>
 
@@ -153,33 +440,36 @@ textarea{min-height:105px;resize:vertical}
 
 <section class="section section-soft" id="services">
   <div class="container">
-    <div class="section-head"><h2>Les interventions les plus demandées</h2><p>Un seul interlocuteur pour diagnostiquer, dépanner et, si nécessaire, remettre en état l’intérieur.</p></div>
+    <div class="section-head">
+      <h2>Les interventions les plus demandées</h2>
+      <p>Un seul interlocuteur pour diagnostiquer, dépanner et, si nécessaire, remettre en état l’intérieur.</p>
+    </div>
     <div class="cards">
-      <article class="card"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Recherche de fuite d'eau"><div class="card-body"><h3>Recherche de fuite</h3><p>Fuite visible ou suspectée, trace d’humidité, compteur qui tourne ou dégât des eaux.</p><a class="more" href="recherche-fuite-lunel.html">Voir le service →</a></div></article>
-      <article class="card"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC moderne - dépannage plomberie"><div class="card-body"><h3>WC & plomberie</h3><p>Chasse d’eau, mécanisme, robinetterie, douche et petits dépannages plomberie.</p><a class="more" href="wc-plomberie-lunel.html">Voir le service →</a></div></article>
-      <article class="card"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Technicien intervenant sur un système de chauffe-eau"><div class="card-body"><h3>Chauffe-eau</h3><p>Absence d’eau chaude, fuite, groupe de sécurité, diagnostic et remplacement si nécessaire.</p><a class="more" href="chauffe-eau-lunel.html">Voir le service →</a></div></article>
-      <article class="card"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Dépannage électrique"><div class="card-body"><h3>Petite panne électrique</h3><p>Prise, éclairage, disjonction ou recherche de panne simple sur installation accessible.</p><a class="more" href="depannage-electrique-lunel.html">Voir le service →</a></div></article>
-      <article class="card"><img src="https://images.pexels.com/photos/6474458/pexels-photo-6474458.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Dégâts des eaux"><div class="card-body"><h3>Dégâts des eaux</h3><p>Après la fuite : placo, plafond, enduits, peinture, sols et remise en état intérieure.</p><a class="more" href="degats-des-eaux-lunel.html">Voir le service →</a></div></article>
-      <article class="card"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Rénovation intérieure"><div class="card-body"><h3>Rénovation intérieure</h3><p>Salle de bain, placo, plafond, peinture, parquet flottant et travaux de second œuvre.</p><a class="more" href="renovation-interieure-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite d'eau"><div class="card-body"><h3>Recherche de fuite</h3><p>Fuite visible ou suspectée, trace d’humidité, compteur qui tourne ou dégât des eaux.</p><a class="more" href="recherche-fuite-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC moderne"><div class="card-body"><h3>WC & plomberie</h3><p>Chasse d’eau, mécanisme, robinetterie, douche et petits dépannages plomberie.</p><a class="more" href="wc-plomberie-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Intervention chauffe-eau"><div class="card-body"><h3>Chauffe-eau</h3><p>Absence d’eau chaude, fuite, groupe de sécurité, diagnostic et remplacement si nécessaire.</p><a class="more" href="chauffe-eau-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="card-body"><h3>Petite panne électrique</h3><p>Prise, éclairage, disjonction ou recherche de panne simple.</p><a class="more" href="depannage-electrique-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/6474458/pexels-photo-6474458.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dégâts des eaux"><div class="card-body"><h3>Dégâts des eaux</h3><p>Après la fuite : placo, plafond, enduits, peinture, sols et remise en état intérieure.</p><a class="more" href="degats-des-eaux-lunel.html">Voir le service →</a></div></article>
+      <article class="card"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="card-body"><h3>Rénovation intérieure</h3><p>Salle de bain, placo, plafond, peinture, parquet flottant et second œuvre.</p><a class="more" href="renovation-interieure-lunel.html">Voir le service →</a></div></article>
     </div>
   </div>
 </section>
 
-<section class="section band" id="renovation">
+<section class="section section-dark" id="renovation">
   <div class="container">
     <div class="section-head">
       <h2>Du dépannage à la remise en état</h2>
       <p>Une intervention simple : comprendre le problème, le résoudre, puis remettre l’intérieur en état si nécessaire.</p>
     </div>
-    <div class="band-grid">
-      <div class="band-item"><h3>1. Vous expliquez le problème</h3><p>Fuite, panne, WC, chauffe-eau ou dégât des eaux : vous décrivez la situation et, si utile, vous envoyez une photo.</p></div>
-      <div class="band-item"><h3>2. Dépannage et réparation</h3><p>Recherche de la cause, réparation lorsque c’est possible et explication claire de la solution à prévoir.</p></div>
-      <div class="band-item"><h3>3. Remise en état si besoin</h3><p>Placo, plafond, peinture, sol ou salle de bain : les dégâts intérieurs peuvent ensuite être repris sans multiplier les intervenants.</p></div>
+    <div class="process">
+      <div class="process-item"><h3>1. Vous expliquez le problème</h3><p>Fuite, panne, WC, chauffe-eau ou dégât des eaux : vous décrivez la situation et, si utile, vous envoyez une photo.</p></div>
+      <div class="process-item"><h3>2. Dépannage et réparation</h3><p>Recherche de la cause, réparation lorsque c’est possible et explication claire de la solution à prévoir.</p></div>
+      <div class="process-item"><h3>3. Remise en état si besoin</h3><p>Placo, plafond, peinture, sol ou salle de bain : les dégâts intérieurs peuvent ensuite être repris.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="zones">
+<section class="section section-white" id="zones">
   <div class="container">
     <div class="section-head"><h2>Zone d’intervention</h2><p>Lunel et communes proches, mais aussi Montpellier et Nîmes. Montpellier est privilégié pour les déplacements hors secteur proche.</p></div>
     <div class="zones"><span>Lunel</span><span>Montpellier</span><span>Nîmes</span><span>Lunel-Viel</span><span>Marsillargues</span><span>Saint-Just</span><span>Sommières</span><span>Mauguio</span><span>La Grande-Motte</span><span>Aigues-Mortes</span></div>
@@ -187,7 +477,7 @@ textarea{min-height:105px;resize:vertical}
 </section>
 
 <section class="section section-soft" id="contact">
-  <div class="container contact">
+  <div class="container contact-grid">
     <div>
       <div class="section-head"><h2>Demander un rappel ou un devis</h2><p>Pour une urgence, l’appel reste le moyen le plus rapide.</p></div>
       <p><strong>Téléphone :</strong> <a href="tel:+33603752324">06 03 75 23 24</a></p>
@@ -212,11 +502,32 @@ textarea{min-height:105px;resize:vertical}
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><h3>Saillard & Co – Dépannage habitat</h3><p>Lunel • Montpellier • Nîmes • alentours selon disponibilité.</p><strong>06 03 75 23 24</strong><br><a href="mailto:saillard.co@gmail.com">saillard.co@gmail.com</a></div>
-    <div><strong>Dépannages</strong><a href="recherche-fuite-lunel.html">Recherche de fuite</a><a href="chauffe-eau-lunel.html">Chauffe-eau</a><a href="wc-plomberie-lunel.html">WC / plomberie</a></div>
-    <div><strong>Informations</strong><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a></div>
+    <div>
+      <h3>Saillard & Co – Dépannage habitat</h3>
+      <p>Lunel • Montpellier • Nîmes • alentours selon disponibilité.</p>
+      <strong>06 03 75 23 24</strong>
+      <a href="mailto:saillard.co@gmail.com">saillard.co@gmail.com</a>
+      <small>SIRET 983 997 529 00018</small>
+    </div>
+    <div>
+      <strong>Dépannages</strong>
+      <a href="recherche-fuite-lunel.html">Recherche de fuite</a>
+      <a href="chauffe-eau-lunel.html">Chauffe-eau</a>
+      <a href="wc-plomberie-lunel.html">WC / plomberie</a>
+      <a href="depannage-electrique-lunel.html">Électricité</a>
+    </div>
+    <div>
+      <strong>Informations</strong>
+      <a href="depannage-montpellier.html">Montpellier</a>
+      <a href="depannage-nimes.html">Nîmes</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+    </div>
   </div>
 </footer>
+<div class="mobilebar">
+  <a class="call" href="tel:+33603752324">☎ Appeler</a>
+  <a class="mail" href="mailto:saillard.co@gmail.com">✉ Écrire</a>
+</div>
 
-<div class="mobilebar"><a class="call" href="tel:+33603752324">☎ Appeler</a><a class="mail" href="mailto:saillard.co@gmail.com">✉ Écrire</a></div>
 </body></html>

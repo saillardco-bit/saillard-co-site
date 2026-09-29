@@ -1,17 +1,22 @@
-SAILLARD & CO – V7
-Corrections demandées :
-- menu du haut nettement plus grand et plus lisible
-- bandeau urgence plus lisible
-- pages services beaucoup moins blanches
-- hero des pages services en bleu-vert foncé
-- contenu central dans une grande carte claire sur fond vert/gris
-- listes de prestations transformées en blocs visuels
-- appels à l'action plus contrastés
-- cohérence avec la page d'accueil
+SAILLARD & CO – VERSION V8
+Cette version est une vraie refonte, pas un simple remplacement de CSS.
+
+CORRECTIONS :
+- menu du haut réellement agrandi (nom, sous-titre, liens et bouton)
+- pages WC, chauffe-eau et TOUS les services refaites avec le même style
+- plus de grandes pages blanches
+- hero bleu-vert foncé sur les services
+- fond vert/gris doux + cartes structurées
+- photos différentes par service
+- version autonome : CSS intégré dans chaque page
 
 MISE EN LIGNE :
-1. GitHub > Add file > Upload files
-2. Envoyer tous les fichiers
-3. Commit changes
-4. Attendre 1 à 3 minutes
-5. Recharger avec Cmd + Shift + R
+1. Décompresser le ZIP.
+2. GitHub > Add file > Upload files.
+3. Envoyer tous les fichiers du dossier.
+4. Commit changes.
+5. Attendre 1 à 3 minutes.
+6. Recharger avec Cmd + Shift + R.
+
+IMPORTANT :
+Ne supprimez pas votre fichier google*.html de validation Search Console déjà présent sur GitHub.
