@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://saillardco-bit.github.io/saillard-co-site/sitemap.xml
+
+Sitemap: https://saillardco-bit.github.io/saillard-co-site/sitemap.txt
