@@ -1,19 +1,17 @@
-SAILLARD & CO – VERSION AUTONOME SANS DOSSIER ASSETS
+SAILLARD & CO – VERSION VISUELLE V3 PRO
 
-Cette version corrige le problème d'affichage constaté sur GitHub Pages.
-Le CSS et le JavaScript sont intégrés directement dans chaque page HTML.
-Il n'y a donc PLUS besoin d'envoyer un dossier assets.
+Cette version corrige le rendu trop blanc / trop fade :
+- hero sombre bleu-vert plus professionnel
+- photo moins envahissante
+- titre plus compact
+- cartes plus nettes
+- sections légèrement contrastées
+- téléphone et urgence toujours très visibles
+- version autonome, sans dossier assets
 
-À FAIRE :
-1. Dans GitHub > Add file > Upload files.
-2. Envoyer TOUS les fichiers de ce dossier à la racine du dépôt.
-3. Remplacer les fichiers portant déjà le même nom.
-4. Commit changes.
-5. Attendre 1 à 3 minutes.
-6. Recharger le site avec Cmd + Shift + R.
-
-IMPORTANT :
-- Le fichier principal doit s'appeler exactement index.html.
-- Les anciens fichiers index-2.html et index-saillard-urgence.html ne servent pas au site et peuvent être supprimés plus tard.
-
-MISE À JOUR V2 : fond moins blanc + photo distincte pour Recherche de fuite et WC/plomberie.
+MISE EN LIGNE :
+1. GitHub > Add file > Upload files
+2. Envoyer tous les fichiers
+3. Commit changes
+4. Attendre 1 à 3 min
+5. Cmd + Shift + R
