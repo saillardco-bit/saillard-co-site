@@ -1,5 +1,5 @@
-SAILLARD & CO – V5
-- photo WC différente de la photo chauffe-eau
-- photo chauffe-eau dédiée
-- bloc « Pourquoi Saillard & Co ? » remplacé par « Du dépannage à la remise en état »
-- version autonome sans dossier assets
+SAILLARD & CO – V6
+- WC / plomberie : photo dédiée de WC
+- Chauffe-eau : photo dédiée d’intervention sur système de chauffage
+- Les deux photos sont désormais totalement différentes
+- La photo principale est différente également
