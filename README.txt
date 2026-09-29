@@ -1,22 +1,17 @@
-SITE SAILLARD & CO – VERSION VÉRIFIÉE
-Téléphone : 06 03 75 23 24
-E-mail : saillard.co@gmail.com
-Site GitHub Pages prévu : https://saillardco-bit.github.io/saillard-co-site/
+SAILLARD & CO – VERSION AUTONOME SANS DOSSIER ASSETS
 
-ZONE D’INTERVENTION
-- Lunel et communes proches
-- Montpellier : OUI, zone privilégiée pour les déplacements hors secteur proche
-- Nîmes : OUI, selon disponibilité
+Cette version corrige le problème d'affichage constaté sur GitHub Pages.
+Le CSS et le JavaScript sont intégrés directement dans chaque page HTML.
+Il n'y a donc PLUS besoin d'envoyer un dossier assets.
 
-MISE EN LIGNE
-1. Décompresser le ZIP.
-2. Dans GitHub > Add file > Upload files, envoyer TOUS les fichiers et le dossier assets.
-3. Remplacer les anciens fichiers portant les mêmes noms.
+À FAIRE :
+1. Dans GitHub > Add file > Upload files.
+2. Envoyer TOUS les fichiers de ce dossier à la racine du dépôt.
+3. Remplacer les fichiers portant déjà le même nom.
 4. Commit changes.
-5. Attendre 1 à 3 minutes puis recharger avec Cmd+Shift+R.
+5. Attendre 1 à 3 minutes.
+6. Recharger le site avec Cmd + Shift + R.
 
-FORMULAIRE
-Au premier envoi, FormSubmit peut demander une confirmation de l’adresse saillard.co@gmail.com.
-
-NOTE
-Les mentions légales contiennent les informations disponibles. Si un nom d’entrepreneur, une adresse de siège ou d’autres mentions réglementaires doivent légalement apparaître, il faudra les compléter avec les informations exactes plutôt que les inventer.
+IMPORTANT :
+- Le fichier principal doit s'appeler exactement index.html.
+- Les anciens fichiers index-2.html et index-saillard-urgence.html ne servent pas au site et peuvent être supprimés plus tard.

@@ -2,7 +2,135 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0f766e">
-<link rel="stylesheet" href="assets/styles.css">
+<style>
+
+:root{
+  --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --card:#ffffff;
+  --primary:#0f766e; --primary2:#115e59; --urgent:#dc2626; --urgent2:#b91c1c;
+  --accent:#f59e0b; --radius:18px; --shadow:0 18px 55px rgba(15,23,42,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1120px,calc(100% - 32px));margin:auto}
+.topbar{background:linear-gradient(90deg,var(--urgent),var(--urgent2));color:#fff;font-weight:800}
+.topbar .container{display:flex;justify-content:center;gap:10px;align-items:center;padding:9px 0;text-align:center}
+.header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:900;letter-spacing:-.02em}
+.brand small{display:block;color:var(--muted);font-size:.74rem;font-weight:700}
+.navlinks{display:flex;gap:20px;align-items:center;font-weight:700;font-size:.95rem}
+.callbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 18px;font-weight:900;border:0;cursor:pointer}
+.callbtn{background:var(--urgent);color:#fff;box-shadow:0 10px 28px rgba(220,38,38,.25)}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.hero{padding:64px 0 44px;background:
+  radial-gradient(circle at 85% 20%,rgba(15,118,110,.15),transparent 28%),
+  linear-gradient(180deg,#fff,#f8fafc)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#fee2e2;color:#991b1b;border-radius:999px;padding:7px 12px;font-weight:900;font-size:.86rem}
+h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:.98;letter-spacing:-.055em;margin:18px 0}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:750px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 16px}
+.trustline{display:flex;gap:16px;flex-wrap:wrap;color:#334155;font-weight:750;font-size:.93rem}
+.trustline span{display:inline-flex;gap:7px;align-items:center}
+.urgent-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
+.urgent-card h2{margin:0 0 4px;font-size:1.5rem}
+.urgent-card p{margin:0 0 16px;color:var(--muted)}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quick-grid a{padding:13px;border-radius:14px;background:#f8fafc;border:1px solid var(--line);font-weight:800}
+.phone-big{font-size:1.65rem;font-weight:950;color:var(--urgent);display:block;margin:18px 0 4px}
+.section{padding:68px 0}
+.section.alt{background:#fff}
+.section-head{max-width:760px;margin-bottom:28px}
+.section-head h2{font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.04em;margin:0 0 10px}
+.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:0 8px 25px rgba(15,23,42,.05)}
+.card h3{margin:6px 0 8px}
+.card p{color:var(--muted);margin:0 0 12px}
+.card a.more{color:var(--primary);font-weight:900}
+.icon{font-size:1.6rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+.step{background:#0f172a;color:#fff;border-radius:20px;padding:24px;position:relative}
+.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#111827;font-weight:950;margin-bottom:14px}
+.step p{color:#cbd5e1}
+.area{display:flex;flex-wrap:wrap;gap:10px}
+.area span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 13px;font-weight:750}
+.form-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}
+label{font-weight:800;font-size:.92rem;display:block;margin:12px 0 6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #cbd5e1;border-radius:12px;font:inherit;background:#fff}
+textarea{min-height:110px;resize:vertical}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:10px 0}
+.faq summary{font-weight:900;cursor:pointer}
+.faq p{color:var(--muted)}
+.cta{background:linear-gradient(135deg,#0f172a,#134e4a);color:#fff;border-radius:26px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.cta h2{margin:0 0 6px;font-size:2rem}
+.cta p{margin:0;color:#cbd5e1}
+.footer{background:#0b1220;color:#cbd5e1;padding:44px 0 110px}
+.footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:28px}
+.footer h3,.footer strong{color:#fff}
+.footer a{display:block;margin:6px 0}
+.legal{border-top:1px solid #233047;margin-top:30px;padding-top:18px;font-size:.9rem}
+.mobilebar{display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:50;background:#fff;border:1px solid var(--line);box-shadow:0 15px 40px rgba(15,23,42,.22);border-radius:18px;padding:8px;gap:8px}
+.mobilebar a{flex:1;text-align:center;padding:12px 8px;border-radius:13px;font-weight:950}
+.mobilebar .call{background:var(--urgent);color:#fff}.mobilebar .mail{background:var(--primary);color:#fff}
+.subhero{padding:48px 0;background:linear-gradient(180deg,#fff,#f1f5f9)}
+.subhero h1{font-size:clamp(2.2rem,5vw,4rem)}
+.breadcrumb{font-size:.9rem;color:var(--muted);font-weight:700}
+.content{max-width:800px}
+.content h2{margin-top:34px}
+.content ul{padding-left:20px}
+.notice{background:#fff7ed;border:1px solid #fed7aa;border-radius:15px;padding:16px}
+@media(max-width:880px){
+  .navlinks{display:none}.hero-grid,.form-wrap{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr 1fr}
+  .hero{padding-top:40px}.urgent-card{order:2}.mobilebar{display:flex}.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .cards,.steps,.footer-grid,.quick-grid{grid-template-columns:1fr}
+  .container{width:min(100% - 22px,1120px)}.nav{min-height:64px}
+  .header .callbtn{padding:10px 13px;font-size:.88rem}
+  h1{font-size:2.65rem}.hero p{font-size:1.05rem}.section{padding:52px 0}
+}
+
+
+/* VISUELS & SECTIONS RENFORCÉES */
+.hero-visual{position:relative;border-radius:24px;overflow:hidden;min-height:430px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.7);background:#dbeafe}
+.hero-visual img{width:100%;height:100%;min-height:430px;object-fit:cover}
+.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(15,23,42,.72))}
+.hero-visual .visual-badge{position:absolute;z-index:2;left:18px;right:18px;bottom:18px;color:#fff;font-weight:900;font-size:1rem}
+.hero-side{display:grid;gap:16px}
+#services{background:
+ radial-gradient(circle at 15% 10%,rgba(45,212,191,.16),transparent 24%),
+ radial-gradient(circle at 92% 86%,rgba(14,116,144,.18),transparent 24%),
+ linear-gradient(135deg,#0f2f35 0%,#123f44 48%,#0c2830 100%)}
+#services .section-head h2,#services .section-head p{color:#fff}
+#services .section-head p{color:#d7e7e8}
+.card{overflow:hidden;padding:0;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(15,23,42,.16)}
+.card-media{height:170px;overflow:hidden;background:#e2e8f0}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .28s ease}
+.card:hover .card-media img{transform:scale(1.035)}
+.card-body{padding:20px 22px 22px}
+.card-body .icon{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:12px;background:#ecfeff;margin-top:-42px;position:relative;box-shadow:0 8px 20px rgba(15,23,42,.12)}
+.visual-section{background:linear-gradient(180deg,#f0fdfa,#f8fafc)}
+.visual-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;gap:16px}
+.visual-tile{position:relative;overflow:hidden;border-radius:20px;min-height:300px;box-shadow:var(--shadow);background:#dbeafe}
+.visual-tile img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.visual-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(15,23,42,.78))}
+.visual-caption{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}
+.visual-caption strong{display:block;font-size:1.1rem}.visual-caption small{opacity:.88}
+.service-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.service-image{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);min-height:330px;background:#e2e8f0}
+.service-image img{width:100%;height:100%;min-height:330px;object-fit:cover}
+.stock-note{font-size:.8rem;color:#64748b;margin-top:8px}
+@media(max-width:880px){.hero-visual{min-height:320px}.hero-visual img{min-height:320px}.visual-grid{grid-template-columns:1fr 1fr}.visual-tile:first-child{grid-column:1/-1}.service-hero-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.visual-grid{grid-template-columns:1fr}.visual-tile:first-child{grid-column:auto}.visual-tile{min-height:240px}.hero-visual,.hero-visual img{min-height:280px}}
+
+</style>
 
 <title>Dépannage électrique à Lunel | Saillard & Co</title>
 <meta name="description" content="Panne d’éclairage, prise ou circuit qui disjoncte ? Saillard & Co intervient pour les petites recherches de panne et reprises électriques intérieures. Appelez le 06 03 75 23 24.">
@@ -65,5 +193,14 @@
   <a class="call" href="tel:+33603752324">☎ Appeler</a>
   <a class="mail" href="mailto:saillard.co@gmail.com?subject=Demande%20de%20dépannage">✉ Écrire</a>
 </div>
-<script src="assets/site.js"></script>
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const id=a.getAttribute('href');
+    if(id.length>1){const el=document.querySelector(id); if(el){e.preventDefault(); el.scrollIntoView({behavior:'smooth'});}}
+  });
+});
+
+</script>
 </body></html>
