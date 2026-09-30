@@ -288,7 +288,6 @@ textarea{min-height:105px;resize:vertical}
   height:100%;
   background:#e8f0ee;
 }
-#sectorMap{
   width:100%;
   height:100%;
   min-height:330px;
@@ -313,8 +312,6 @@ textarea{min-height:105px;resize:vertical}
 .dot.lunel{background:#e7281f}
 .dot.city{background:#0b3855}
 .dot.circle{background:transparent;border:2px solid #e7281f}
-.leaflet-control-attribution{font-size:9px!important}
-.leaflet-tooltip.city-label{
   background:#fff;
   border:1px solid #cbd6dc;
   border-radius:7px;
@@ -323,10 +320,17 @@ textarea{min-height:105px;resize:vertical}
   box-shadow:0 4px 12px rgba(8,40,68,.12);
   padding:4px 7px;
 }
-.leaflet-tooltip.city-label:before{display:none}
 
-</style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-integrity="sha256-p4NxAoJBhIINfQ3ynXfsHq0jMZl0v2k0eU0bK0d7GKs=" crossorigin="">
+
+.container{width:min(1540px,calc(100% - 12px))!important}
+@media(max-width:1200px){.container{width:min(100% - 18px,1540px)!important}}
+@media(max-width:720px){.container{width:min(100% - 14px,1540px)!important}}
+
+.zone-map{position:relative;min-height:345px;height:100%;background:linear-gradient(180deg,#eef5f2,#dcebe6);overflow:hidden}
+.zone-map svg{display:block;width:100%;height:100%;min-height:345px}
+.zone-map .map-card-label{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.95);border:1px solid #d1dce0;border-radius:12px;padding:10px 12px;box-shadow:0 10px 28px rgba(8,40,68,.12);font-size:12px;line-height:1.45}
+.zone-map .map-card-label strong{display:block;font-size:13px;margin-bottom:3px}
+</style>
 </head><body>
 
 <div class="emergency">
@@ -396,15 +400,38 @@ integrity="sha256-p4NxAoJBhIINfQ3ynXfsHq0jMZl0v2k0eU0bK0d7GKs=" crossorigin="">
         <p>Intervention à Lunel et dans les communes voisines, ainsi qu’à Montpellier et Nîmes selon disponibilité. Montpellier est privilégié hors secteur proche.</p>
         <a class="sector-link" href="depannage-montpellier.html">📍 Voir toutes les communes</a>
       </div>
-      <div class="map-shell">
-        <div id="sectorMap" aria-label="Carte du secteur d’intervention"></div>
-        <div class="map-legend">
-          <strong>Secteur d’intervention</strong>
-          <div class="legend-line"><span class="dot lunel"></span> Lunel — base d’intervention</div>
-          <div class="legend-line"><span class="dot city"></span> Montpellier / Nîmes</div>
-          <div class="legend-line"><span class="dot circle"></span> Rayon indicatif ~30 km</div>
-        </div>
-      </div>
+      
+<div class="zone-map" aria-label="Carte du secteur d'intervention">
+<svg viewBox="0 0 920 430" role="img">
+<defs>
+<linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#edf3e9"/><stop offset="1" stop-color="#dce8dc"/></linearGradient>
+<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8edf4"/><stop offset="1" stop-color="#b9dfe9"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0b2c40" flood-opacity=".18"/></filter>
+</defs>
+<rect width="920" height="430" fill="#f3f7f5"/>
+<path d="M0 345 C120 325 205 348 300 338 C390 330 470 354 560 342 C670 327 770 351 920 328 L920 430 L0 430 Z" fill="url(#sea)"/>
+<path d="M45 58 C165 18 285 38 380 26 C515 8 650 26 770 78 C850 112 892 174 878 236 C864 294 792 327 700 333 C604 339 522 320 438 325 C330 332 228 316 145 278 C70 244 22 184 28 125 C31 92 35 72 45 58 Z" fill="url(#land)" stroke="#c8d7ce" stroke-width="3"/>
+<path d="M198 255 C310 230 420 227 520 220 C625 212 724 224 818 245" fill="none" stroke="#d8bd94" stroke-width="8" stroke-linecap="round" opacity=".88"/>
+<path d="M510 220 C560 184 610 142 670 106" fill="none" stroke="#d8bd94" stroke-width="6" stroke-linecap="round" opacity=".82"/>
+<circle cx="530" cy="226" r="128" fill="#e7281f" fill-opacity=".08" stroke="#e7281f" stroke-width="4" stroke-dasharray="10 9"/>
+<circle cx="330" cy="248" r="10" fill="#0b3855" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
+<rect x="202" y="262" width="160" height="42" rx="10" fill="#fff" stroke="#cfdadf" filter="url(#shadow)"/>
+<text x="282" y="289" text-anchor="middle" font-size="21" font-weight="900" fill="#0b2941">Montpellier</text>
+<circle cx="530" cy="226" r="13" fill="#e7281f" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
+<rect x="550" y="202" width="94" height="44" rx="10" fill="#fff" stroke="#e2c3c0" filter="url(#shadow)"/>
+<text x="597" y="230" text-anchor="middle" font-size="22" font-weight="950" fill="#a91f19">Lunel</text>
+<circle cx="684" cy="104" r="10" fill="#0b3855" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
+<rect x="701" y="78" width="95" height="42" rx="10" fill="#fff" stroke="#cfdadf" filter="url(#shadow)"/>
+<text x="748" y="105" text-anchor="middle" font-size="21" font-weight="900" fill="#0b2941">Nîmes</text>
+<circle cx="486" cy="146" r="5" fill="#728891"/><text x="456" y="132" font-size="15" font-weight="700" fill="#52656d">Sommières</text>
+<circle cx="405" cy="298" r="5" fill="#728891"/><text x="378" y="321" font-size="15" font-weight="700" fill="#52656d">Mauguio</text>
+<circle cx="568" cy="318" r="5" fill="#728891"/><text x="536" y="342" font-size="15" font-weight="700" fill="#52656d">La Grande-Motte</text>
+<circle cx="650" cy="310" r="5" fill="#728891"/><text x="621" y="333" font-size="15" font-weight="700" fill="#52656d">Aigues-Mortes</text>
+<text x="58" y="397" font-size="20" font-weight="700" fill="#5e8995">Mer Méditerranée</text>
+</svg>
+<div class="map-card-label"><strong>Zone indicative</strong>Rayon ≈ 30 km autour de Lunel<br>Montpellier et Nîmes selon disponibilité</div>
+</div>
+
     </div>
 
     <div class="method-card" id="renovation">
@@ -463,57 +490,6 @@ integrity="sha256-p4NxAoJBhIINfQ3ynXfsHq0jMZl0v2k0eU0bK0d7GKs=" crossorigin="">
 <div class="mobilebar"><a class="call" href="tel:+33603752324">☎ Appeler</a><a class="mail" href="index.html#contact">✉ Écrire</a></div>
 
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script>
-(function(){
-  if(!document.getElementById('sectorMap') || typeof L === 'undefined') return;
 
-  const lunel = [43.6777, 4.1357];
-  const montpellier = [43.6108, 3.8767];
-  const nimes = [43.8367, 4.3601];
-
-  const map = L.map('sectorMap', {
-    scrollWheelZoom:false,
-    zoomControl:true,
-    attributionControl:true
-  }).setView([43.72, 4.10], 9);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom:19,
-    attribution:'© OpenStreetMap'
-  }).addTo(map);
-
-  L.circle(lunel, {
-    radius:30000,
-    color:'#e7281f',
-    weight:2,
-    fillColor:'#ef6a62',
-    fillOpacity:0.13,
-    dashArray:'7 7'
-  }).addTo(map);
-
-  const lunelMarker = L.circleMarker(lunel,{
-    radius:9,color:'#fff',weight:3,fillColor:'#e7281f',fillOpacity:1
-  }).addTo(map);
-  lunelMarker.bindTooltip('Lunel',{permanent:true,direction:'right',className:'city-label',offset:[8,0]}).openTooltip();
-
-  const montpellierMarker = L.circleMarker(montpellier,{
-    radius:7,color:'#fff',weight:2,fillColor:'#0b3855',fillOpacity:1
-  }).addTo(map);
-  montpellierMarker.bindTooltip('Montpellier',{permanent:true,direction:'left',className:'city-label',offset:[-8,0]}).openTooltip();
-
-  const nimesMarker = L.circleMarker(nimes,{
-    radius:7,color:'#fff',weight:2,fillColor:'#0b3855',fillOpacity:1
-  }).addTo(map);
-  nimesMarker.bindTooltip('Nîmes',{permanent:true,direction:'right',className:'city-label',offset:[8,0]}).openTooltip();
-
-  const bounds = L.latLngBounds([
-    [43.50,3.72],
-    [43.92,4.48]
-  ]);
-  map.fitBounds(bounds,{padding:[12,12]});
-})();
-</script>
 
 </body></html>
