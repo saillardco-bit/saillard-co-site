@@ -167,6 +167,27 @@ textarea{min-height:105px;resize:vertical}
   .mobilebar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;gap:6px;box-shadow:0 16px 40px rgba(0,0,0,.18)}
   .mobilebar a{flex:1;text-align:center;padding:11px;border-radius:8px;font-weight:950}.mobilebar .call{background:var(--red);color:#fff}.mobilebar .mail{background:var(--navy);color:#fff}
 }
+
+/* ===== V16 — proportions & service cards ===== */
+body{font-size:16px;line-height:1.55}
+.emergency .container{min-height:58px}.emergency-main{font-size:19px}.emergency-phone{font-size:18px;padding:9px 18px}
+.header-row{min-height:88px;grid-template-columns:300px 1fr 205px}.brand{font-size:36px}.brand small{font-size:12.5px}.nav{font-size:16px;gap:30px}.quote-top{font-size:15px;padding:13px 16px}
+.hero-grid{min-height:520px}.hero-copy{padding:46px 50px 38px 0}.hero-text{font-size:19px;line-height:1.52}.hero-badge{font-size:14px}.hero-badge i{width:41px;height:41px}.hero-photo{min-height:520px}
+.services{padding:44px 0 52px}.kicker{font-size:13px}.section-head{margin-bottom:25px}.section-head h2{font-size:42px}.section-head p{font-size:17px;line-height:1.55;max-width:900px}
+.service-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.service-card{border-radius:18px;box-shadow:0 12px 34px rgba(7,35,60,.10)}
+.service-card a{display:flex;flex-direction:column;min-height:100%;height:100%}
+.service-card img{height:190px;min-height:190px;object-fit:cover}
+.service-card-body{padding:22px 22px 58px;min-height:172px}
+.service-card h3{font-size:23px;line-height:1.15;margin:0 0 10px}
+.service-card p{font-size:16px;line-height:1.48;color:#536775}
+.arrow{right:20px;bottom:18px;width:39px;height:39px;font-size:20px;background:#f4eee5}
+.middle{padding:34px 0 48px}.sector-copy p{font-size:16px}.step p{font-size:14px}.step h3{font-size:18px}
+.trust{padding:44px 0 48px}.trust-copy p{font-size:16px}.trust-item strong{font-size:15px}.trust-item span{font-size:13px}
+.contact{padding:64px 0}.contact h2{font-size:41px}.contact-card{padding:27px}label{font-size:14px}input,select,textarea{font-size:16px}
+@media(max-width:980px){.header-row{grid-template-columns:250px 1fr 180px}.nav{font-size:14px;gap:16px}.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){body{font-size:16px}.header-row{min-height:72px}.brand{font-size:27px}.service-grid{grid-template-columns:1fr}.service-card img{height:210px;min-height:210px}.service-card-body{min-height:160px;padding:21px 20px 56px}.service-card h3{font-size:22px}.service-card p{font-size:15.5px}.section-head h2{font-size:34px}.hero-text{font-size:17px}.services{padding:34px 0 42px}}
+
 </style></head><body>
 
 <div class="emergency">
@@ -218,12 +239,12 @@ textarea{min-height:105px;resize:vertical}
       <h2>Dépannage et rénovation habitat</h2>
       <p>Un large éventail de services pour répondre à vos urgences et à vos projets, avec un seul interlocuteur de confiance.</p>
     </div>
-    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection et réparation de fuites d’eau.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Installation, dépannage et entretien.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC & plomberie"><div class="service-card-body"><h3>WC & plomberie</h3><p>Réparation, remplacement et installation.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, lavabo, douche, WC, canalisations.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Petites pannes, tableaux, appareillages.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Remise en état, petits travaux, aménagement.</p><span class="arrow">→</span></div></a></article></div>
+    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection de l’origine, diagnostic et réparation lorsque la situation le permet.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Panne, fuite, groupe de sécurité, remplacement ou remise en service.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC & plomberie"><div class="service-card-body"><h3>WC & plomberie</h3><p>Chasse d’eau, mécanisme, robinetterie, alimentation et petites réparations.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, lavabo, douche, WC et évacuations intérieures bouchées.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Recherche de panne simple, tableau, prises, interrupteurs et appareillages.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Placo, peinture, sols, salle de bain et remise en état après sinistre.</p><span class="arrow">→</span></div></a></article></div>
   </div>
 </section>
 
