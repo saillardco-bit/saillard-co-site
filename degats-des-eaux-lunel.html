@@ -396,6 +396,165 @@ textarea{min-height:110px;resize:vertical}
   .mobilebar .call{background:var(--red);color:#fff}
   .mobilebar .mail{background:var(--teal);color:#fff}
 }
+
+/* ===== V18 pages services enrichies ===== */
+.topbar{
+  background:linear-gradient(90deg,#c91812,#e52c22,#ba1713)!important;
+  min-height:58px!important;
+  display:flex!important;
+  align-items:center!important;
+  font-size:18px!important;
+  font-weight:950!important;
+}
+.topbar .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+.header .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+.nav{
+  min-height:88px!important;
+}
+.brand{
+  font-size:33px!important;
+}
+.navlinks{
+  gap:30px!important;
+}
+.navlinks a{
+  font-size:16px!important;
+}
+.call-top{
+  font-size:15px!important;
+  padding:13px 17px!important;
+}
+.service-hero{
+  padding:72px 0!important;
+  background:
+    radial-gradient(circle at 14% 15%,rgba(230,191,108,.08),transparent 24%),
+    linear-gradient(135deg,#061d32,#0a3c56)!important;
+}
+.service-hero .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+.service-hero h1{
+  font-size:clamp(46px,4.8vw,68px)!important;
+}
+.service-hero p{
+  font-size:19px!important;
+  line-height:1.6!important;
+}
+.service-photo{
+  border:1px solid rgba(255,255,255,.18)!important;
+}
+.service-photo img{
+  height:430px!important;
+}
+.service-body{
+  background:linear-gradient(180deg,#edf2f3,#e3eaed)!important;
+  padding:58px 0 30px!important;
+}
+.service-body .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+.service-layout{
+  gap:28px!important;
+}
+.service-panel{
+  padding:30px!important;
+  border-radius:18px!important;
+}
+.sidebox{
+  border-radius:18px!important;
+  background:linear-gradient(160deg,#0a354f,#082b42)!important;
+  color:#fff!important;
+}
+.sidebox p{
+  color:#d9e5eb!important;
+}
+.service-enrich{
+  padding:20px 0 62px;
+  background:linear-gradient(180deg,#e3eaed,#f4f6f7);
+}
+.service-enrich .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+.service-intro{
+  background:#fff;
+  border:1px solid #d5e0e4;
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 16px 36px rgba(8,40,68,.08);
+  margin-bottom:24px;
+}
+.service-intro p{
+  margin:0;
+  font-size:17px;
+  line-height:1.7;
+  color:#425664;
+}
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:20px;
+}
+.info-card{
+  background:#fff;
+  border:1px solid #d5e0e4;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 14px 32px rgba(8,40,68,.07);
+}
+.info-card h3{
+  margin:0 0 12px;
+  font-size:22px;
+  color:#0a2f48;
+}
+.info-card ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:10px;
+}
+.info-card li{
+  position:relative;
+  padding-left:24px;
+  color:#4a5e6b;
+  line-height:1.45;
+}
+.info-card li:before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:#e52c22;
+  font-weight:950;
+}
+.info-card.emphasis{
+  background:linear-gradient(160deg,#f7f2e9,#efe4d2);
+  border-color:#e3d1b3;
+}
+.info-card.emphasis p{
+  margin:0;
+  line-height:1.65;
+  color:#4f4a43;
+}
+.service-cta{
+  padding:48px 0!important;
+  background:linear-gradient(90deg,#061d32,#0a3b56)!important;
+}
+.service-cta .container{
+  width:min(1480px,calc(100% - 24px))!important;
+}
+@media(max-width:900px){
+  .info-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:720px){
+  .topbar{font-size:14px!important;min-height:48px!important}
+  .nav{min-height:70px!important}
+  .service-photo img{height:310px!important}
+}
+
 </style>
 </head><body>
 
@@ -405,7 +564,7 @@ textarea{min-height:110px;resize:vertical}
     <a class="brand" href="index.html">Saillard & Co<small>Dépannage habitat • Lunel</small></a>
     <nav class="navlinks">
       <a href="index.html#services">Dépannages</a>
-      <a href="index.html#renovation">Rénovation</a>
+      <a href="renovation-interieure-lunel.html">Rénovation</a>
       <a href="index.html#zones">Secteur</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -442,6 +601,29 @@ textarea{min-height:110px;resize:vertical}
       <p>Après le dépannage, la remise en état intérieure peut aussi être prise en charge si le sinistre a abîmé murs, plafonds ou sols.</p>
       <a class="btn btn-call" href="tel:+33603752324">☎ Appeler maintenant</a>
     </aside>
+  </div>
+</section>
+
+
+<section class="service-enrich">
+  <div class="container">
+    <div class="service-intro">
+      <p>Après une fuite, le dépannage ne suffit pas toujours. Murs, plafond, placo, peinture ou sol peuvent nécessiter une remise en état adaptée.</p>
+    </div>
+    <div class="info-grid">
+      <article class="info-card">
+        <h3>Après un sinistre</h3>
+        <ul><li>Identifier l’origine de la fuite</li><li>Réparer la cause</li><li>Laisser sécher les supports</li><li>Préparer la remise en état</li></ul>
+      </article>
+      <article class="info-card">
+        <h3>Remise en état possible</h3>
+        <ul><li>Placo et plafond</li><li>Enduit et peinture</li><li>Sol ou parquet flottant</li><li>Petites reprises intérieures</li></ul>
+      </article>
+      <article class="info-card emphasis">
+        <h3>Un seul interlocuteur</h3>
+        <p>La recherche de fuite, la réparation et une partie de la remise en état peuvent être regroupées afin d’éviter de multiplier les intervenants.</p>
+      </article>
+    </div>
   </div>
 </section>
 

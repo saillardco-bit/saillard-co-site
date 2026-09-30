@@ -330,6 +330,272 @@ textarea{min-height:105px;resize:vertical}
 .zone-map svg{display:block;width:100%;height:100%;min-height:345px}
 .zone-map .map-card-label{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.95);border:1px solid #d1dce0;border-radius:12px;padding:10px 12px;box-shadow:0 10px 28px rgba(8,40,68,.12);font-size:12px;line-height:1.45}
 .zone-map .map-card-label strong{display:block;font-size:13px;margin-bottom:3px}
+
+/* ===================== V18 ===================== */
+:root{
+  --cream:#f4efe6;
+  --cream2:#ece4d7;
+  --navy-deep:#051b2f;
+  --navy-mid:#0a3652;
+  --red-v18:#e52c22;
+  --gold-v18:#e6bf6c;
+}
+.container{width:min(1580px,calc(100% - 10px))!important}
+
+/* Bandeau urgence plus visible */
+.emergency{
+  background:linear-gradient(90deg,#c91812 0%,#e52c22 56%,#ba1713 100%)!important;
+  box-shadow:0 5px 18px rgba(175,17,12,.25)!important;
+}
+.emergency .container{
+  min-height:66px!important;
+  grid-template-columns:auto 1fr auto!important;
+  gap:22px!important;
+}
+.emergency-icon{
+  font-size:32px!important;
+}
+.emergency-main{
+  font-size:22px!important;
+  font-weight:950!important;
+  letter-spacing:-.02em!important;
+}
+.emergency-main::after{
+  content:" • Lunel, Montpellier, Nîmes";
+  font-size:14px;
+  font-weight:800;
+  opacity:.9;
+  margin-left:12px;
+}
+.emergency-phone{
+  font-size:21px!important;
+  padding:10px 19px!important;
+  border-width:2px!important;
+}
+
+/* Header blanc plus lisible */
+.header-row{
+  min-height:92px!important;
+  grid-template-columns:340px 1fr 230px!important;
+}
+.brand{
+  font-size:39px!important;
+}
+.brand small{
+  font-size:13px!important;
+}
+.nav{
+  gap:40px!important;
+  font-size:17px!important;
+}
+.nav a{
+  padding:31px 0 25px!important;
+}
+.quote-top{
+  font-size:16px!important;
+  padding:14px 16px!important;
+}
+.quote-top small{
+  font-size:12px!important;
+}
+
+/* Services : moins blanc, plus visuel */
+.services{
+  background:
+    radial-gradient(circle at 8% 15%,rgba(229,44,34,.06),transparent 22%),
+    radial-gradient(circle at 92% 6%,rgba(10,54,82,.08),transparent 24%),
+    linear-gradient(180deg,#f7f4ef 0%,#efe9df 100%)!important;
+  padding:44px 0 48px!important;
+  border-top:1px solid #e9e2d8;
+  border-bottom:1px solid #ded7cc;
+}
+.section-head{
+  display:grid;
+  grid-template-columns:1fr auto;
+  align-items:end;
+  gap:24px;
+  margin-bottom:24px!important;
+}
+.section-head::after{
+  content:"Dépannage • Réparation • Remise en état";
+  color:#7b6d60;
+  font-size:14px;
+  font-weight:800;
+  background:#fff;
+  border:1px solid #ded6cb;
+  border-radius:999px;
+  padding:9px 14px;
+}
+.section-head h2{
+  font-size:42px!important;
+}
+.service-grid{
+  gap:24px!important;
+}
+.service-card{
+  border:1px solid #d8d0c5!important;
+  box-shadow:0 18px 40px rgba(25,38,48,.10)!important;
+}
+.service-card a{
+  min-height:235px!important;
+}
+.service-card img{
+  min-height:235px!important;
+}
+.service-card-body{
+  background:linear-gradient(180deg,#fff,#faf8f5)!important;
+}
+.service-card h3{
+  font-size:23px!important;
+}
+
+/* secteur + méthode : plus haut de gamme */
+.middle{
+  background:linear-gradient(180deg,#e9eef0 0%,#e2e8ea 100%)!important;
+  padding:42px 0!important;
+}
+.middle-grid{
+  grid-template-columns:1.15fr .85fr!important;
+  gap:28px!important;
+}
+.sector-card,.method-card{
+  border-radius:20px!important;
+  border:1px solid #cdd8de!important;
+  box-shadow:0 20px 48px rgba(10,42,62,.12)!important;
+}
+.sector-card{
+  grid-template-columns:.62fr 1.38fr!important;
+}
+.sector-copy{
+  padding:30px!important;
+  background:linear-gradient(180deg,#fff,#f5f7f7);
+}
+.sector-copy h2{
+  font-size:34px!important;
+}
+.sector-copy p{
+  font-size:15px!important;
+}
+.zone-map{
+  min-height:410px!important;
+  background:#e6ece9!important;
+}
+.zone-map svg{
+  min-height:410px!important;
+}
+.zone-map .map-card-label{
+  display:none!important;
+}
+.method-card{
+  padding:30px!important;
+  background:linear-gradient(180deg,#ffffff,#f4f7f8)!important;
+}
+.method-card h2{
+  font-size:34px!important;
+}
+.method-steps{
+  gap:15px!important;
+  margin-top:20px!important;
+}
+.step{
+  min-height:205px!important;
+  background:#fff!important;
+  border:1px solid #d6e0e5!important;
+  box-shadow:0 12px 28px rgba(8,40,68,.08)!important;
+  padding:19px!important;
+}
+.step-num{
+  width:48px!important;
+  height:48px!important;
+  font-size:20px!important;
+}
+.step h3{
+  font-size:17px!important;
+}
+.step p{
+  font-size:13.5px!important;
+}
+
+/* Pourquoi nous faire confiance beaucoup plus lisible */
+.trust{
+  position:relative;
+  background:
+    radial-gradient(circle at 82% 20%,rgba(59,175,226,.13),transparent 24%),
+    radial-gradient(circle at 15% 35%,rgba(230,191,108,.10),transparent 28%),
+    linear-gradient(120deg,#04192d,#0a3c58 65%,#082f48)!important;
+  padding:48px 0 52px!important;
+  border-top:4px solid #e6bf6c;
+}
+.trust-grid{
+  grid-template-columns:.9fr 2.1fr!important;
+  gap:40px!important;
+}
+.trust-copy .kicker{
+  font-size:13px!important;
+  letter-spacing:.14em!important;
+}
+.trust-copy h2{
+  font-size:41px!important;
+  margin-top:8px!important;
+}
+.trust-copy p{
+  font-size:16px!important;
+  line-height:1.6!important;
+}
+.trust-items{
+  gap:16px!important;
+}
+.trust-item{
+  background:rgba(255,255,255,.10)!important;
+  border:1px solid rgba(255,255,255,.22)!important;
+  padding:22px 16px!important;
+  border-radius:16px!important;
+  backdrop-filter:blur(4px);
+}
+.trust-item i{
+  width:58px!important;
+  height:58px!important;
+  font-size:25px!important;
+  border-color:#e6bf6c!important;
+}
+.trust-item strong{
+  font-size:16px!important;
+}
+.trust-item span{
+  font-size:13px!important;
+  line-height:1.45!important;
+}
+
+/* Contact plus structuré */
+.contact{
+  background:linear-gradient(180deg,#f0f3f4,#e7edef)!important;
+  padding:64px 0!important;
+}
+
+/* Responsive */
+@media(max-width:1200px){
+  .container{width:min(100% - 18px,1580px)!important}
+  .header-row{grid-template-columns:280px 1fr 210px!important}
+  .nav{gap:24px!important;font-size:15px!important}
+}
+@media(max-width:900px){
+  .middle-grid,.trust-grid{grid-template-columns:1fr!important}
+  .sector-card{grid-template-columns:1fr!important}
+  .section-head{grid-template-columns:1fr!important}
+  .section-head::after{justify-self:start}
+}
+@media(max-width:720px){
+  .container{width:min(100% - 14px,1580px)!important}
+  .emergency .container{min-height:52px!important;grid-template-columns:auto 1fr!important}
+  .emergency-main{font-size:15px!important}
+  .emergency-main::after{display:none}
+  .emergency-phone{font-size:14px!important;padding:7px 10px!important}
+  .header-row{min-height:72px!important;grid-template-columns:1fr auto!important}
+  .brand{font-size:27px!important}
+  .quote-top{font-size:12px!important}
+  .zone-map,.zone-map svg{min-height:320px!important}
+}
+
 </style>
 </head><body>
 
@@ -346,7 +612,7 @@ textarea{min-height:105px;resize:vertical}
     <nav class="nav">
       <a class="active" href="index.html">Accueil</a>
       <a href="index.html#services">Dépannages</a>
-      <a href="index.html#renovation">Rénovation</a>
+      <a href="renovation-interieure-lunel.html">Rénovation</a>
       <a href="index.html#zones">Secteur d’intervention</a>
       <a href="index.html#contact">Contact</a>
     </nav>
@@ -401,46 +667,108 @@ textarea{min-height:105px;resize:vertical}
         <a class="sector-link" href="depannage-montpellier.html">📍 Voir toutes les communes</a>
       </div>
       
+
 <div class="zone-map" aria-label="Carte du secteur d'intervention">
-<svg viewBox="0 0 920 430" role="img">
-<defs>
-<linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#edf3e9"/><stop offset="1" stop-color="#dce8dc"/></linearGradient>
-<linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8edf4"/><stop offset="1" stop-color="#b9dfe9"/></linearGradient>
-<filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0b2c40" flood-opacity=".18"/></filter>
-</defs>
-<rect width="920" height="430" fill="#f3f7f5"/>
-<path d="M0 345 C120 325 205 348 300 338 C390 330 470 354 560 342 C670 327 770 351 920 328 L920 430 L0 430 Z" fill="url(#sea)"/>
-<path d="M45 58 C165 18 285 38 380 26 C515 8 650 26 770 78 C850 112 892 174 878 236 C864 294 792 327 700 333 C604 339 522 320 438 325 C330 332 228 316 145 278 C70 244 22 184 28 125 C31 92 35 72 45 58 Z" fill="url(#land)" stroke="#c8d7ce" stroke-width="3"/>
-<path d="M198 255 C310 230 420 227 520 220 C625 212 724 224 818 245" fill="none" stroke="#d8bd94" stroke-width="8" stroke-linecap="round" opacity=".88"/>
-<path d="M510 220 C560 184 610 142 670 106" fill="none" stroke="#d8bd94" stroke-width="6" stroke-linecap="round" opacity=".82"/>
-<circle cx="530" cy="226" r="128" fill="#e7281f" fill-opacity=".08" stroke="#e7281f" stroke-width="4" stroke-dasharray="10 9"/>
-<circle cx="330" cy="248" r="10" fill="#0b3855" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
-<rect x="202" y="262" width="160" height="42" rx="10" fill="#fff" stroke="#cfdadf" filter="url(#shadow)"/>
-<text x="282" y="289" text-anchor="middle" font-size="21" font-weight="900" fill="#0b2941">Montpellier</text>
-<circle cx="530" cy="226" r="13" fill="#e7281f" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
-<rect x="550" y="202" width="94" height="44" rx="10" fill="#fff" stroke="#e2c3c0" filter="url(#shadow)"/>
-<text x="597" y="230" text-anchor="middle" font-size="22" font-weight="950" fill="#a91f19">Lunel</text>
-<circle cx="684" cy="104" r="10" fill="#0b3855" stroke="#fff" stroke-width="4" filter="url(#shadow)"/>
-<rect x="701" y="78" width="95" height="42" rx="10" fill="#fff" stroke="#cfdadf" filter="url(#shadow)"/>
-<text x="748" y="105" text-anchor="middle" font-size="21" font-weight="900" fill="#0b2941">Nîmes</text>
-<circle cx="486" cy="146" r="5" fill="#728891"/><text x="456" y="132" font-size="15" font-weight="700" fill="#52656d">Sommières</text>
-<circle cx="405" cy="298" r="5" fill="#728891"/><text x="378" y="321" font-size="15" font-weight="700" fill="#52656d">Mauguio</text>
-<circle cx="568" cy="318" r="5" fill="#728891"/><text x="536" y="342" font-size="15" font-weight="700" fill="#52656d">La Grande-Motte</text>
-<circle cx="650" cy="310" r="5" fill="#728891"/><text x="621" y="333" font-size="15" font-weight="700" fill="#52656d">Aigues-Mortes</text>
-<text x="58" y="397" font-size="20" font-weight="700" fill="#5e8995">Mer Méditerranée</text>
-</svg>
-<div class="map-card-label"><strong>Zone indicative</strong>Rayon ≈ 30 km autour de Lunel<br>Montpellier et Nîmes selon disponibilité</div>
+  <svg viewBox="0 0 980 460" role="img" aria-labelledby="zoneTitle zoneDesc">
+    <title id="zoneTitle">Secteur d'intervention autour de Lunel</title>
+    <desc id="zoneDesc">Lunel au centre, Montpellier à l'ouest, Nîmes au nord-est, avec un rayon indicatif d'environ 30 kilomètres.</desc>
+    <defs>
+      <linearGradient id="bgLand" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f1f3e8"/>
+        <stop offset="1" stop-color="#dfe8d9"/>
+      </linearGradient>
+      <linearGradient id="bgSea" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#c8e8f0"/>
+        <stop offset="1" stop-color="#a8d7e3"/>
+      </linearGradient>
+      <filter id="mapShadow" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0a2c40" flood-opacity=".18"/>
+      </filter>
+      <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0a2c40" flood-opacity=".12"/>
+      </filter>
+    </defs>
+
+    <rect width="980" height="460" fill="#eef2ef"/>
+
+    <!-- mer -->
+    <path d="M0 355 C135 330 240 350 355 342 C470 335 560 360 670 346 C790 331 875 347 980 326 L980 460 L0 460 Z"
+          fill="url(#bgSea)"/>
+
+    <!-- terre -->
+    <path d="M35 72 C140 25 265 42 360 27 C490 6 640 19 765 69 C860 108 930 170 923 235 C917 300 845 338 750 347 C632 358 540 330 438 340 C330 352 218 330 130 285 C62 250 18 192 22 131 C24 102 28 84 35 72 Z"
+          fill="url(#bgLand)" stroke="#c6d2c6" stroke-width="3"/>
+
+    <!-- littoral -->
+    <path d="M0 355 C135 330 240 350 355 342 C470 335 560 360 670 346 C790 331 875 347 980 326"
+          fill="none" stroke="#7db8c8" stroke-width="4"/>
+
+    <!-- routes -->
+    <path d="M185 275 C295 246 405 245 505 236 C625 226 744 236 862 267"
+          fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M185 275 C295 246 405 245 505 236 C625 226 744 236 862 267"
+          fill="none" stroke="#d8aa63" stroke-width="5" stroke-linecap="round"/>
+    <path d="M535 235 C590 195 644 145 704 102"
+          fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M535 235 C590 195 644 145 704 102"
+          fill="none" stroke="#d8aa63" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- rayon -->
+    <circle cx="550" cy="238" r="132"
+            fill="#e52c22" fill-opacity=".08"
+            stroke="#e52c22" stroke-width="4" stroke-dasharray="11 10"/>
+
+    <!-- étiquette rayon -->
+    <g filter="url(#softShadow)">
+      <rect x="575" y="96" width="172" height="52" rx="13" fill="#fff" stroke="#e8d3cf"/>
+      <text x="661" y="117" text-anchor="middle" font-size="14" font-weight="900" fill="#b3221b">RAYON INDICATIF</text>
+      <text x="661" y="136" text-anchor="middle" font-size="17" font-weight="950" fill="#7f241f">≈ 30 km</text>
+    </g>
+
+    <!-- Montpellier -->
+    <circle cx="318" cy="266" r="11" fill="#0a3652" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
+    <g filter="url(#softShadow)">
+      <rect x="178" y="283" width="172" height="46" rx="12" fill="#fff" stroke="#cbd6db"/>
+      <text x="264" y="312" text-anchor="middle" font-size="22" font-weight="950" fill="#0a2a43">Montpellier</text>
+    </g>
+
+    <!-- Lunel -->
+    <circle cx="550" cy="238" r="14" fill="#e52c22" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
+    <g filter="url(#softShadow)">
+      <rect x="573" y="212" width="104" height="48" rx="12" fill="#fff" stroke="#e1c8c5"/>
+      <text x="625" y="243" text-anchor="middle" font-size="23" font-weight="950" fill="#b0221b">Lunel</text>
+    </g>
+
+    <!-- Nîmes -->
+    <circle cx="726" cy="112" r="11" fill="#0a3652" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
+    <g filter="url(#softShadow)">
+      <rect x="744" y="86" width="108" height="46" rx="12" fill="#fff" stroke="#cbd6db"/>
+      <text x="798" y="115" text-anchor="middle" font-size="22" font-weight="950" fill="#0a2a43">Nîmes</text>
+    </g>
+
+    <!-- villes secondaires -->
+    <circle cx="500" cy="145" r="5" fill="#748b90"/>
+    <text x="462" y="130" font-size="15" font-weight="800" fill="#51666c">Sommières</text>
+    <circle cx="410" cy="318" r="5" fill="#748b90"/>
+    <text x="380" y="342" font-size="15" font-weight="800" fill="#51666c">Mauguio</text>
+    <circle cx="606" cy="334" r="5" fill="#748b90"/>
+    <text x="562" y="360" font-size="15" font-weight="800" fill="#51666c">La Grande-Motte</text>
+    <circle cx="690" cy="325" r="5" fill="#748b90"/>
+    <text x="654" y="350" font-size="15" font-weight="800" fill="#51666c">Aigues-Mortes</text>
+
+    <text x="58" y="410" font-size="20" font-weight="800" fill="#568894">Mer Méditerranée</text>
+  </svg>
 </div>
 
     </div>
 
     <div class="method-card" id="renovation">
-      <div class="kicker">Du dépannage à la remise en état</div>
-      <h2>Notre méthode en 3 étapes</h2>
+      <div class="kicker">Dépannage, réparation et rénovation</div>
+      <h2>De l’urgence à la remise en état</h2>
       <div class="method-steps">
         <article class="step"><div class="step-num">1</div><h3>Vous nous contactez</h3><p>Par téléphone ou via le formulaire. Vous expliquez votre problème.</p></article>
         <article class="step"><div class="step-num">2</div><h3>Nous intervenons rapidement</h3><p>À Lunel et alentours, selon disponibilité.</p></article>
-        <article class="step"><div class="step-num">3</div><h3>Votre problème est résolu</h3><p>Dépannage ou remise en état durable, avec des conseils pour la suite.</p></article>
+        <article class="step"><div class="step-num">3</div><h3>Réparation ou remise en état</h3><p>Dépannage, réparation puis remise en état intérieure si nécessaire.</p></article>
       </div>
     </div>
   </div>
