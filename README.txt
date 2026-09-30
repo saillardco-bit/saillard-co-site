@@ -1,19 +1,16 @@
-SAILLARD & CO – VERSION V10 PREMIUM / CONVERSION
+SAILLARD & CO – VERSION V11
 
-Objectif : rendre le site plus accrocheur et donner davantage envie d'appeler.
-
-AMÉLIORATIONS :
-- hero plus premium et plus dynamique
-- meilleure hiérarchie visuelle
-- menu plus lisible
-- preuves de confiance juste sous le hero
-- cartes services plus modernes
-- animations hover légères
-- section méthode plus impactante
-- contact plus convaincant
-- pages services harmonisées avec la nouvelle charte
-- toujours aucune promesse de délai non garantie
-- aucune fausse note, aucun faux avis, aucune fausse certification
+Ajustements de finition demandés :
+- bandeau rouge d'urgence nettement plus lisible
+- Saillard & Co beaucoup plus grand dans le header
+- sous-titre du nom agrandi
+- menu Dépannages / Rénovation / Secteur / Contact agrandi
+- bouton Appeler maintenant légèrement agrandi
+- bandeau blanc de confiance plus grand et plus lisible
+- titre principal légèrement rééquilibré
+- photo principale un peu moins dominante
+- textes des cartes services légèrement agrandis
+- mêmes réglages appliqués aux pages services
 
 MISE EN LIGNE :
 1. Décompresser le ZIP.
@@ -21,6 +18,7 @@ MISE EN LIGNE :
 3. Envoyer tous les fichiers.
 4. Commit changes.
 5. Attendre 1 à 3 minutes.
-6. Cmd + Shift + R.
+6. Recharger avec Cmd + Shift + R.
 
+IMPORTANT :
 Ne supprimez pas le fichier google*.html de validation Search Console déjà présent dans GitHub.
