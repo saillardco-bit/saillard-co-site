@@ -168,27 +168,166 @@ textarea{min-height:105px;resize:vertical}
   .mobilebar a{flex:1;text-align:center;padding:11px;border-radius:8px;font-weight:950}.mobilebar .call{background:var(--red);color:#fff}.mobilebar .mail{background:var(--navy);color:#fff}
 }
 
-/* ===== V16 — proportions & service cards ===== */
-body{font-size:16px;line-height:1.55}
-.emergency .container{min-height:58px}.emergency-main{font-size:19px}.emergency-phone{font-size:18px;padding:9px 18px}
-.header-row{min-height:88px;grid-template-columns:300px 1fr 205px}.brand{font-size:36px}.brand small{font-size:12.5px}.nav{font-size:16px;gap:30px}.quote-top{font-size:15px;padding:13px 16px}
-.hero-grid{min-height:520px}.hero-copy{padding:46px 50px 38px 0}.hero-text{font-size:19px;line-height:1.52}.hero-badge{font-size:14px}.hero-badge i{width:41px;height:41px}.hero-photo{min-height:520px}
-.services{padding:44px 0 52px}.kicker{font-size:13px}.section-head{margin-bottom:25px}.section-head h2{font-size:42px}.section-head p{font-size:17px;line-height:1.55;max-width:900px}
-.service-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.service-card{border-radius:18px;box-shadow:0 12px 34px rgba(7,35,60,.10)}
-.service-card a{display:flex;flex-direction:column;min-height:100%;height:100%}
-.service-card img{height:190px;min-height:190px;object-fit:cover}
-.service-card-body{padding:22px 22px 58px;min-height:172px}
-.service-card h3{font-size:23px;line-height:1.15;margin:0 0 10px}
-.service-card p{font-size:16px;line-height:1.48;color:#536775}
-.arrow{right:20px;bottom:18px;width:39px;height:39px;font-size:20px;background:#f4eee5}
-.middle{padding:34px 0 48px}.sector-copy p{font-size:16px}.step p{font-size:14px}.step h3{font-size:18px}
-.trust{padding:44px 0 48px}.trust-copy p{font-size:16px}.trust-item strong{font-size:15px}.trust-item span{font-size:13px}
-.contact{padding:64px 0}.contact h2{font-size:41px}.contact-card{padding:27px}label{font-size:14px}input,select,textarea{font-size:16px}
-@media(max-width:980px){.header-row{grid-template-columns:250px 1fr 180px}.nav{font-size:14px;gap:16px}.service-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:720px){body{font-size:16px}.header-row{min-height:72px}.brand{font-size:27px}.service-grid{grid-template-columns:1fr}.service-card img{height:210px;min-height:210px}.service-card-body{min-height:160px;padding:21px 20px 56px}.service-card h3{font-size:22px}.service-card p{font-size:15.5px}.section-head h2{font-size:34px}.hero-text{font-size:17px}.services{padding:34px 0 42px}}
+/* ===== V16 : page plus large + proportions + pages services ===== */
+.container{
+  width:min(1380px,calc(100% - 24px))!important;
+}
+.header-row{
+  grid-template-columns:310px 1fr 205px!important;
+}
+.hero-grid{
+  grid-template-columns:47% 53%!important;
+}
+.hero-copy{
+  padding-right:48px!important;
+}
+.services{
+  padding-top:34px!important;
+}
+.service-grid{
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:22px!important;
+}
+.service-card a{
+  min-height:225px!important;
+}
+.service-card img{
+  min-height:225px!important;
+}
+.service-card h3{
+  font-size:22px!important;
+}
+.service-card p{
+  font-size:14.5px!important;
+}
+.middle-grid{
+  grid-template-columns:1.08fr .92fr!important;
+  gap:24px!important;
+}
+.sector-card{
+  grid-template-columns:.72fr 1.28fr!important;
+}
+.method-card{
+  background:#ffffff!important;
+  border:1px solid #d4dde3!important;
+}
+.step{
+  background:linear-gradient(180deg,#ffffff,#f5f8fa)!important;
+  border:1px solid #d9e2e7!important;
+  box-shadow:0 8px 20px rgba(8,40,68,.06)!important;
+}
+.step-num{
+  background:#0b3855!important;
+}
+.trust{
+  background:linear-gradient(120deg,#041d34,#0c4560)!important;
+}
+.trust-item{
+  background:rgba(255,255,255,.11)!important;
+  border-color:rgba(255,255,255,.22)!important;
+}
+.trust-item strong{
+  font-size:15px!important;
+}
 
-</style></head><body>
+/* Pages services : plus larges, moins blanches, plus structurées */
+.service-hero{
+  padding:68px 0!important;
+}
+.service-hero-grid{
+  grid-template-columns:1.02fr .98fr!important;
+  gap:44px!important;
+}
+.service-photo img{
+  height:390px!important;
+}
+.service-body{
+  background:
+    radial-gradient(circle at 85% 8%,rgba(12,61,89,.08),transparent 22%),
+    linear-gradient(180deg,#e8eff2,#f4f7f8)!important;
+  padding:64px 0!important;
+}
+.service-layout{
+  grid-template-columns:1.2fr .8fr!important;
+  gap:26px!important;
+}
+.service-panel{
+  padding:30px!important;
+}
+.sidebox{
+  background:linear-gradient(145deg,#ffffff,#f0f5f7)!important;
+  border:1px solid #cfdae0!important;
+  border-left:5px solid #e7281f!important;
+}
+.service-list{
+  gap:12px!important;
+}
+.service-list li{
+  background:#f0f5f7!important;
+  border:1px solid #dae4e8!important;
+}
+@media(max-width:980px){
+  .container{width:min(100% - 20px,1380px)!important}
+  .header-row{grid-template-columns:240px 1fr 170px!important}
+  .service-grid{grid-template-columns:1fr 1fr!important}
+  .middle-grid{grid-template-columns:1fr!important}
+}
+@media(max-width:720px){
+  .container{width:min(100% - 16px,1380px)!important}
+  .service-grid{grid-template-columns:1fr!important}
+  .service-card a{min-height:185px!important}
+  .service-card img{min-height:185px!important}
+  .service-layout,.service-hero-grid{grid-template-columns:1fr!important}
+}
+
+
+/* V16 carte secteur */
+.map-shell{
+  position:relative;
+  min-height:330px;
+  height:100%;
+  background:#e8f0ee;
+}
+#sectorMap{
+  width:100%;
+  height:100%;
+  min-height:330px;
+}
+.map-legend{
+  position:absolute;
+  z-index:500;
+  right:14px;
+  bottom:14px;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(8px);
+  border:1px solid #d7e0e4;
+  border-radius:12px;
+  padding:10px 12px;
+  box-shadow:0 10px 28px rgba(8,40,68,.14);
+  font-size:12px;
+  line-height:1.45;
+}
+.map-legend strong{display:block;font-size:13px;margin-bottom:4px}
+.legend-line{display:flex;align-items:center;gap:7px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.dot.lunel{background:#e7281f}
+.dot.city{background:#0b3855}
+.dot.circle{background:transparent;border:2px solid #e7281f}
+.leaflet-control-attribution{font-size:9px!important}
+.leaflet-tooltip.city-label{
+  background:#fff;
+  border:1px solid #cbd6dc;
+  border-radius:7px;
+  color:#0b2941;
+  font-weight:900;
+  box-shadow:0 4px 12px rgba(8,40,68,.12);
+  padding:4px 7px;
+}
+.leaflet-tooltip.city-label:before{display:none}
+
+</style><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIINfQ3ynXfsHq0jMZl0v2k0eU0bK0d7GKs=" crossorigin="">
+</head><body>
 
 <div class="emergency">
   <div class="container">
@@ -239,12 +378,12 @@ body{font-size:16px;line-height:1.55}
       <h2>Dépannage et rénovation habitat</h2>
       <p>Un large éventail de services pour répondre à vos urgences et à vos projets, avec un seul interlocuteur de confiance.</p>
     </div>
-    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection de l’origine, diagnostic et réparation lorsque la situation le permet.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Panne, fuite, groupe de sécurité, remplacement ou remise en service.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC & plomberie"><div class="service-card-body"><h3>WC & plomberie</h3><p>Chasse d’eau, mécanisme, robinetterie, alimentation et petites réparations.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, lavabo, douche, WC et évacuations intérieures bouchées.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Recherche de panne simple, tableau, prises, interrupteurs et appareillages.</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Placo, peinture, sols, salle de bain et remise en état après sinistre.</p><span class="arrow">→</span></div></a></article></div>
+    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection et réparation de fuites d’eau.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Installation, dépannage et entretien.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC & plomberie"><div class="service-card-body"><h3>WC & plomberie</h3><p>Réparation, remplacement et installation.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, lavabo, douche, WC, canalisations.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Petites pannes, tableaux, appareillages.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Remise en état, petits travaux, aménagement.</p><span class="arrow">→</span></div></a></article></div>
   </div>
 </section>
 
@@ -257,9 +396,15 @@ body{font-size:16px;line-height:1.55}
         <p>Intervention à Lunel et dans les communes voisines, ainsi qu’à Montpellier et Nîmes selon disponibilité. Montpellier est privilégié hors secteur proche.</p>
         <a class="sector-link" href="depannage-montpellier.html">📍 Voir toutes les communes</a>
       </div>
-      <iframe class="real-map" title="Carte réelle du secteur Lunel Montpellier Nîmes"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=3.6500%2C43.5000%2C4.5500%2C43.9500&layer=mapnik&marker=43.6777%2C4.1357"
-        loading="lazy"></iframe>
+      <div class="map-shell">
+        <div id="sectorMap" aria-label="Carte du secteur d’intervention"></div>
+        <div class="map-legend">
+          <strong>Secteur d’intervention</strong>
+          <div class="legend-line"><span class="dot lunel"></span> Lunel — base d’intervention</div>
+          <div class="legend-line"><span class="dot city"></span> Montpellier / Nîmes</div>
+          <div class="legend-line"><span class="dot circle"></span> Rayon indicatif ~30 km</div>
+        </div>
+      </div>
     </div>
 
     <div class="method-card" id="renovation">
@@ -316,5 +461,59 @@ body{font-size:16px;line-height:1.55}
   </div>
 </footer>
 <div class="mobilebar"><a class="call" href="tel:+33603752324">☎ Appeler</a><a class="mail" href="index.html#contact">✉ Écrire</a></div>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+  if(!document.getElementById('sectorMap') || typeof L === 'undefined') return;
+
+  const lunel = [43.6777, 4.1357];
+  const montpellier = [43.6108, 3.8767];
+  const nimes = [43.8367, 4.3601];
+
+  const map = L.map('sectorMap', {
+    scrollWheelZoom:false,
+    zoomControl:true,
+    attributionControl:true
+  }).setView([43.72, 4.10], 9);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom:19,
+    attribution:'© OpenStreetMap'
+  }).addTo(map);
+
+  L.circle(lunel, {
+    radius:30000,
+    color:'#e7281f',
+    weight:2,
+    fillColor:'#ef6a62',
+    fillOpacity:0.13,
+    dashArray:'7 7'
+  }).addTo(map);
+
+  const lunelMarker = L.circleMarker(lunel,{
+    radius:9,color:'#fff',weight:3,fillColor:'#e7281f',fillOpacity:1
+  }).addTo(map);
+  lunelMarker.bindTooltip('Lunel',{permanent:true,direction:'right',className:'city-label',offset:[8,0]}).openTooltip();
+
+  const montpellierMarker = L.circleMarker(montpellier,{
+    radius:7,color:'#fff',weight:2,fillColor:'#0b3855',fillOpacity:1
+  }).addTo(map);
+  montpellierMarker.bindTooltip('Montpellier',{permanent:true,direction:'left',className:'city-label',offset:[-8,0]}).openTooltip();
+
+  const nimesMarker = L.circleMarker(nimes,{
+    radius:7,color:'#fff',weight:2,fillColor:'#0b3855',fillOpacity:1
+  }).addTo(map);
+  nimesMarker.bindTooltip('Nîmes',{permanent:true,direction:'right',className:'city-label',offset:[8,0]}).openTooltip();
+
+  const bounds = L.latLngBounds([
+    [43.50,3.72],
+    [43.92,4.48]
+  ]);
+  map.fitBounds(bounds,{padding:[12,12]});
+})();
+</script>
 
 </body></html>
