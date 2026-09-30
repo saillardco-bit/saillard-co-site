@@ -626,13 +626,94 @@ body{background:#dfe7e9!important}
 @media(max-width:1100px){.container{width:min(100% - 22px,1480px)!important}.header-row{grid-template-columns:280px 1fr 200px!important}.nav{gap:22px!important;font-size:15px!important}.service-grid{grid-template-columns:1fr 1fr!important}.middle-grid,.trust-grid{grid-template-columns:1fr!important}.trust-items{grid-template-columns:1fr 1fr!important}}
 @media(max-width:760px){.container{width:min(100% - 16px,1480px)!important}.emergency .container{min-height:50px!important;grid-template-columns:auto 1fr!important}.emergency-main{font-size:15px!important}.emergency-sub{display:none!important}.emergency-phone{font-size:14px!important;padding:7px 10px!important}.header-row{grid-template-columns:1fr auto!important;min-height:72px!important}.brand{font-size:28px!important}.nav{display:none!important}.hero-grid{grid-template-columns:1fr!important}.hero-copy{padding:42px 0!important}.hero-photo{min-height:330px!important}.hero h1{font-size:46px!important}.service-grid{grid-template-columns:1fr!important}.service-card a{grid-template-columns:40% 60%!important;min-height:190px!important}.service-card img{min-height:190px!important}.sector-card{grid-template-columns:1fr!important}.zone-map,.zone-map svg{min-height:340px!important}.method-steps{grid-template-columns:1fr!important}.trust-items{grid-template-columns:1fr!important}}
 
+
+
+/* ===================== V20 FINAL — cohérence visuelle complète ===================== */
+:root{--v20-cream:#f3eee5;--v20-paper:#faf8f4;--v20-mist:#e6edef;--v20-mist2:#d6e1e4;--v20-navy:#061f35;--v20-blue:#0b405d;--v20-red:#e22d24;--v20-gold:#e5bd70}
+body{font-size:17px!important;line-height:1.58!important;background:var(--v20-paper)!important}
+.container{width:min(1360px,calc(100% - 48px))!important;margin-inline:auto!important}
+
+/* Bandeau urgence : vraie hiérarchie, villes enfin lisibles */
+.emergency{background:linear-gradient(90deg,#bd1b15 0%,#e22d24 48%,#c61e17 100%)!important;border-bottom:1px solid rgba(255,255,255,.28)!important}
+.emergency .container{min-height:70px!important;display:grid!important;grid-template-columns:46px minmax(0,1fr) auto!important;gap:16px!important;align-items:center!important}
+.emergency-icon{font-size:30px!important;line-height:1!important}
+.emergency-copy{display:flex!important;align-items:baseline!important;gap:22px!important;min-width:0!important}
+.emergency-main{font-size:20px!important;line-height:1.15!important;font-weight:950!important;letter-spacing:.005em!important;white-space:nowrap!important}
+.emergency-subline{font-size:17px!important;line-height:1.2!important;font-weight:850!important;color:#fff!important;opacity:1!important;white-space:nowrap!important}
+.emergency-phone{font-size:20px!important;line-height:1!important;padding:11px 18px!important;border:2px solid rgba(255,255,255,.9)!important;background:rgba(255,255,255,.10)!important}
+
+/* En-tête / identité */
+.header{background:rgba(255,255,255,.97)!important;box-shadow:0 8px 24px rgba(6,31,53,.06)!important}
+.header-row{min-height:94px!important;grid-template-columns:330px 1fr 215px!important;gap:28px!important}
+.brand{font-size:39px!important;line-height:.92!important;letter-spacing:-.035em!important;color:var(--v20-navy)!important}
+.brand small{font-size:13px!important;line-height:1.2!important;letter-spacing:.13em!important;margin-top:10px!important;color:#3e5363!important}
+.nav{gap:34px!important;font-size:16px!important}.nav a{padding:31px 0 25px!important}
+.quote-top{font-size:15px!important;padding:13px 16px!important}.quote-top small{font-size:12.5px!important}
+
+/* Hero proportionné à la largeur */
+.hero-grid{grid-template-columns:50% 50%!important;min-height:530px!important}
+.hero-copy{padding:52px 54px 42px 0!important}
+.hero-kicker{font-size:14px!important;letter-spacing:.14em!important;margin-bottom:15px!important}
+.hero h1{font-size:clamp(52px,5vw,76px)!important;line-height:1.01!important;max-width:760px!important;margin-bottom:20px!important}
+.hero-text{font-size:19px!important;line-height:1.62!important;max-width:720px!important}
+.cta{min-height:68px!important;padding:14px 22px!important}.cta strong{font-size:18px!important}.cta span{font-size:13.5px!important}
+.hero-badge{font-size:14px!important;line-height:1.35!important}.hero-badge i{width:42px!important;height:42px!important;font-size:19px!important}
+.hero-photo{min-height:530px!important}
+
+/* Services : plus de grande zone blanche vide */
+.services{padding:62px 0 68px!important;background:linear-gradient(180deg,var(--v20-cream),#ebe3d7)!important;border-top:1px solid #e3d8ca!important}
+.section-head{margin-bottom:30px!important;display:grid!important;grid-template-columns:180px minmax(0,1fr)!important;column-gap:30px!important;align-items:end!important}
+.section-head .kicker{grid-row:1 / span 2!important;align-self:start!important;padding-top:8px!important}
+.kicker{font-size:15px!important;line-height:1.2!important;letter-spacing:.12em!important;font-weight:950!important;margin-bottom:8px!important}
+.section-head h2{font-size:46px!important;line-height:1.03!important;letter-spacing:-.025em!important}
+.section-head p{font-size:17px!important;line-height:1.55!important;max-width:920px!important;margin-top:10px!important}
+.service-grid{gap:22px!important}.service-card{border-radius:18px!important;border-color:#d3d9d9!important}
+.service-card a{min-height:220px!important}.service-card img{min-height:220px!important}.service-card-body{padding:22px 20px 54px!important}
+.service-card h3{font-size:23px!important;line-height:1.12!important}.service-card p{font-size:15.5px!important;line-height:1.5!important}.arrow{width:38px!important;height:38px!important;font-size:18px!important}
+
+/* Secteur + méthode */
+.middle{padding:64px 0!important;background:linear-gradient(180deg,var(--v20-mist),var(--v20-mist2))!important}
+.middle-grid{gap:30px!important;grid-template-columns:1.16fr .84fr!important}
+.sector-card,.method-card{border-radius:22px!important;border:1px solid #b8c9ce!important;box-shadow:0 20px 46px rgba(6,31,53,.11)!important}
+.sector-card{grid-template-columns:.57fr 1.43fr!important;background:#f7faf9!important}
+.sector-copy{padding:38px!important;background:linear-gradient(180deg,#fbfcfb,#edf3f3)!important}
+.sector-copy h2,.method-card h2{font-size:39px!important;line-height:1.06!important;letter-spacing:-.02em!important}.sector-copy p{font-size:16px!important;line-height:1.6!important}.sector-link{font-size:14px!important;padding:12px 15px!important}
+.real-osm{position:relative!important;min-height:470px!important;background:#dce5e3!important;overflow:hidden!important}
+.real-osm iframe{display:block!important;width:100%!important;height:100%!important;min-height:470px!important;border:0!important;filter:saturate(.92) contrast(1.03)!important}
+.map-overlay{position:absolute!important;left:18px!important;bottom:18px!important;width:min(340px,calc(100% - 36px))!important;background:rgba(255,255,255,.96)!important;border:1px solid #cad6d9!important;border-radius:14px!important;padding:14px 16px!important;box-shadow:0 12px 30px rgba(6,31,53,.18)!important;backdrop-filter:blur(8px)!important}
+.map-overlay strong{display:block!important;font-size:16px!important;color:var(--v20-navy)!important;margin-bottom:4px!important}.map-overlay span{display:block!important;font-size:13.5px!important;line-height:1.4!important;color:#50636d!important}.map-overlay a{display:inline-block!important;margin-top:8px!important;font-size:13px!important;font-weight:900!important;color:#b8211a!important}
+.method-card{padding:38px!important;background:linear-gradient(180deg,#f8faf9,#e9f0f1)!important}.method-steps{gap:16px!important;margin-top:24px!important}.step{min-height:226px!important;padding:22px!important;border-radius:16px!important}.step-num{width:52px!important;height:52px!important;font-size:22px!important}.step h3{font-size:19px!important;line-height:1.2!important}.step p{font-size:14.5px!important;line-height:1.52!important}
+
+/* Confiance : refonte réellement visible */
+.trust{padding:68px 0 72px!important;background:radial-gradient(circle at 80% 10%,rgba(64,181,225,.18),transparent 25%),radial-gradient(circle at 8% 60%,rgba(229,189,112,.14),transparent 28%),linear-gradient(125deg,#03182a 0%,#073650 58%,#0a4660 100%)!important;border-top:5px solid var(--v20-gold)!important}
+.trust-grid{grid-template-columns:.82fr 2.18fr!important;gap:48px!important;align-items:stretch!important}
+.trust-copy{display:flex!important;flex-direction:column!important;justify-content:center!important;padding-right:12px!important}.trust-copy .kicker{font-size:15px!important;color:#f2cd83!important}.trust-copy h2{font-size:47px!important;line-height:1.03!important;letter-spacing:-.025em!important;margin:10px 0 18px!important}.trust-copy p{font-size:17px!important;line-height:1.65!important;color:#e1ebef!important}
+.trust-items{grid-template-columns:repeat(2,1fr)!important;gap:18px!important}.trust-item{min-height:170px!important;display:grid!important;grid-template-columns:68px 1fr!important;grid-template-rows:auto 1fr!important;column-gap:18px!important;text-align:left!important;align-items:start!important;padding:24px!important;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.07))!important;border:1px solid rgba(255,255,255,.27)!important;border-radius:18px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)!important}.trust-item i{grid-row:1 / span 2!important;width:62px!important;height:62px!important;margin:0!important;border:2px solid var(--v20-gold)!important;font-size:26px!important}.trust-item strong{font-size:18px!important;line-height:1.2!important;margin-top:5px!important}.trust-item span{font-size:14.5px!important;line-height:1.5!important;color:#dbe7eb!important;margin-top:8px!important}
+
+/* Contact et bas de page : pas de retour brutal au blanc */
+.contact{padding:72px 0!important;background:linear-gradient(180deg,#d8e2e5,#c6d4d8)!important}.contact-grid{gap:38px!important}.contact h2{font-size:44px!important;line-height:1.05!important}.contact p{font-size:16.5px!important}.contact-card{padding:30px!important;background:#f7faf9!important;border:1px solid #b8c8ce!important;border-radius:20px!important}.contact-card label{font-size:14.5px!important}.contact-card input,.contact-card select,.contact-card textarea{font-size:16px!important;padding:14px 15px!important}.submit{font-size:17px!important;padding:15px 20px!important}
+.footer{font-size:14.5px!important}.footer h3{font-size:19px!important}
+
+@media(max-width:1120px){
+  .container{width:min(100% - 30px,1360px)!important}.emergency-copy{display:block!important}.emergency-subline{margin-top:5px!important}.header-row{grid-template-columns:290px 1fr 195px!important}.brand{font-size:34px!important}.nav{gap:20px!important;font-size:15px!important}.section-head{grid-template-columns:150px 1fr!important}.middle-grid,.trust-grid{grid-template-columns:1fr!important}.trust-items{grid-template-columns:repeat(2,1fr)!important}
+}
+@media(max-width:780px){
+  .container{width:min(100% - 22px,1360px)!important}.emergency .container{min-height:76px!important;grid-template-columns:38px 1fr auto!important;gap:10px!important}.emergency-icon{font-size:25px!important}.emergency-main{font-size:16px!important;white-space:normal!important}.emergency-subline{font-size:13px!important;white-space:normal!important}.emergency-phone{font-size:14px!important;padding:9px 10px!important}.header-row{grid-template-columns:1fr auto!important;min-height:80px!important}.brand{font-size:30px!important}.brand small{font-size:11px!important}.quote-top{font-size:13px!important;padding:10px 12px!important}.nav{display:none!important}.hero-grid{grid-template-columns:1fr!important}.hero-copy{padding:44px 0!important}.hero h1{font-size:46px!important}.hero-text{font-size:17px!important}.hero-photo{min-height:320px!important}.hero-badges{grid-template-columns:1fr!important}.services{padding:48px 0!important}.section-head{display:block!important}.kicker{font-size:14px!important}.section-head h2{font-size:38px!important}.service-grid{grid-template-columns:1fr!important}.service-card a{grid-template-columns:40% 60%!important;min-height:195px!important}.service-card img{min-height:195px!important}.middle{padding:48px 0!important}.sector-card{grid-template-columns:1fr!important}.sector-copy{padding:28px!important}.sector-copy h2,.method-card h2{font-size:34px!important}.real-osm,.real-osm iframe{min-height:390px!important}.method-card{padding:28px!important}.method-steps{grid-template-columns:1fr!important}.trust{padding:52px 0!important}.trust-copy h2{font-size:39px!important}.trust-items{grid-template-columns:1fr!important}.trust-item{grid-template-columns:60px 1fr!important;min-height:150px!important}.contact{padding:52px 0!important}.contact h2{font-size:38px!important}
+}
+@media(max-width:520px){
+  .emergency .container{grid-template-columns:32px 1fr!important}.emergency-phone{grid-column:1 / -1!important;justify-self:stretch!important;text-align:center!important;margin-bottom:9px!important}.header-row{grid-template-columns:1fr!important;text-align:center!important}.quote-top{display:none!important}.brand{justify-self:center!important}.service-card a{grid-template-columns:1fr!important}.service-card img{height:180px!important;min-height:180px!important}.trust-item{display:block!important;text-align:center!important}.trust-item i{margin:0 auto 12px!important}.map-overlay{position:static!important;width:auto!important;border-radius:0!important;border-left:0!important;border-right:0!important;border-bottom:0!important}.real-osm iframe{min-height:330px!important}.real-osm{min-height:0!important}
+}
+
 </style>
 </head><body>
 
 <div class="emergency">
   <div class="container">
-    <div class="emergency-icon">🚨</div>
-    <div class="emergency-main">Dépannage d’urgence 7j/7 selon disponibilité</div>
+    <div class="emergency-icon" aria-hidden="true">🚨</div>
+    <div class="emergency-copy">
+      <div class="emergency-main">Dépannage d’urgence 7j/7 selon disponibilité</div>
+      <div class="emergency-subline">Lunel • Montpellier • Nîmes • alentours</div>
+    </div>
     <a class="emergency-phone" href="tel:+33603752324">☎ 06 03 75 23 24</a>
   </div>
 </div>
@@ -698,96 +779,17 @@ body{background:#dfe7e9!important}
       </div>
       
 
-<div class="zone-map" aria-label="Carte du secteur d'intervention">
-  <svg viewBox="0 0 980 460" role="img" aria-labelledby="zoneTitle zoneDesc">
-    <title id="zoneTitle">Secteur d'intervention autour de Lunel</title>
-    <desc id="zoneDesc">Lunel au centre, Montpellier à l'ouest, Nîmes au nord-est, avec un rayon indicatif d'environ 30 kilomètres.</desc>
-    <defs>
-      <linearGradient id="bgLand" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#f1f3e8"/>
-        <stop offset="1" stop-color="#dfe8d9"/>
-      </linearGradient>
-      <linearGradient id="bgSea" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#c8e8f0"/>
-        <stop offset="1" stop-color="#a8d7e3"/>
-      </linearGradient>
-      <filter id="mapShadow" x="-40%" y="-40%" width="180%" height="180%">
-        <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0a2c40" flood-opacity=".18"/>
-      </filter>
-      <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
-        <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0a2c40" flood-opacity=".12"/>
-      </filter>
-    </defs>
-
-    <rect width="980" height="460" fill="#eef2ef"/>
-
-    <!-- mer -->
-    <path d="M0 355 C135 330 240 350 355 342 C470 335 560 360 670 346 C790 331 875 347 980 326 L980 460 L0 460 Z"
-          fill="url(#bgSea)"/>
-
-    <!-- terre -->
-    <path d="M35 72 C140 25 265 42 360 27 C490 6 640 19 765 69 C860 108 930 170 923 235 C917 300 845 338 750 347 C632 358 540 330 438 340 C330 352 218 330 130 285 C62 250 18 192 22 131 C24 102 28 84 35 72 Z"
-          fill="url(#bgLand)" stroke="#c6d2c6" stroke-width="3"/>
-
-    <!-- littoral -->
-    <path d="M0 355 C135 330 240 350 355 342 C470 335 560 360 670 346 C790 331 875 347 980 326"
-          fill="none" stroke="#7db8c8" stroke-width="4"/>
-
-    <!-- routes -->
-    <path d="M185 275 C295 246 405 245 505 236 C625 226 744 236 862 267"
-          fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-    <path d="M185 275 C295 246 405 245 505 236 C625 226 744 236 862 267"
-          fill="none" stroke="#d8aa63" stroke-width="5" stroke-linecap="round"/>
-    <path d="M535 235 C590 195 644 145 704 102"
-          fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-    <path d="M535 235 C590 195 644 145 704 102"
-          fill="none" stroke="#d8aa63" stroke-width="4" stroke-linecap="round"/>
-
-    <!-- rayon -->
-    <circle cx="550" cy="238" r="132"
-            fill="#e52c22" fill-opacity=".08"
-            stroke="#e52c22" stroke-width="4" stroke-dasharray="11 10"/>
-
-    <!-- étiquette rayon -->
-    <g filter="url(#softShadow)">
-      <rect x="575" y="96" width="172" height="52" rx="13" fill="#fff" stroke="#e8d3cf"/>
-      <text x="661" y="117" text-anchor="middle" font-size="14" font-weight="900" fill="#b3221b">RAYON INDICATIF</text>
-      <text x="661" y="136" text-anchor="middle" font-size="17" font-weight="950" fill="#7f241f">≈ 30 km</text>
-    </g>
-
-    <!-- Montpellier -->
-    <circle cx="318" cy="266" r="11" fill="#0a3652" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
-    <g filter="url(#softShadow)">
-      <rect x="178" y="283" width="172" height="46" rx="12" fill="#fff" stroke="#cbd6db"/>
-      <text x="264" y="312" text-anchor="middle" font-size="22" font-weight="950" fill="#0a2a43">Montpellier</text>
-    </g>
-
-    <!-- Lunel -->
-    <circle cx="550" cy="238" r="14" fill="#e52c22" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
-    <g filter="url(#softShadow)">
-      <rect x="573" y="212" width="104" height="48" rx="12" fill="#fff" stroke="#e1c8c5"/>
-      <text x="625" y="243" text-anchor="middle" font-size="23" font-weight="950" fill="#b0221b">Lunel</text>
-    </g>
-
-    <!-- Nîmes -->
-    <circle cx="726" cy="112" r="11" fill="#0a3652" stroke="#fff" stroke-width="4" filter="url(#mapShadow)"/>
-    <g filter="url(#softShadow)">
-      <rect x="744" y="86" width="108" height="46" rx="12" fill="#fff" stroke="#cbd6db"/>
-      <text x="798" y="115" text-anchor="middle" font-size="22" font-weight="950" fill="#0a2a43">Nîmes</text>
-    </g>
-
-    <!-- villes secondaires -->
-    <circle cx="500" cy="145" r="5" fill="#748b90"/>
-    <text x="462" y="130" font-size="15" font-weight="800" fill="#51666c">Sommières</text>
-    <circle cx="410" cy="318" r="5" fill="#748b90"/>
-    <text x="380" y="342" font-size="15" font-weight="800" fill="#51666c">Mauguio</text>
-    <circle cx="606" cy="334" r="5" fill="#748b90"/>
-    <text x="562" y="360" font-size="15" font-weight="800" fill="#51666c">La Grande-Motte</text>
-    <circle cx="690" cy="325" r="5" fill="#748b90"/>
-    <text x="654" y="350" font-size="15" font-weight="800" fill="#51666c">Aigues-Mortes</text>
-
-    <text x="58" y="410" font-size="20" font-weight="800" fill="#568894">Mer Méditerranée</text>
-  </svg>
+<div class="zone-map real-osm" aria-label="Carte réelle du secteur d’intervention">
+  <iframe
+    title="Carte OpenStreetMap du secteur d’intervention autour de Lunel"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=3.55%2C43.45%2C4.55%2C44.03&amp;layer=mapnik&amp;marker=43.6778%2C4.1356"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="map-overlay">
+    <strong>📍 Base : Lunel</strong>
+    <span>Interventions autour de Lunel • Montpellier • Nîmes selon disponibilité</span>
+    <a href="https://www.openstreetmap.org/?mlat=43.6778&amp;mlon=4.1356#map=10/43.6778/4.1356" target="_blank" rel="noopener">Agrandir la carte ↗</a>
+  </div>
 </div>
 
     </div>

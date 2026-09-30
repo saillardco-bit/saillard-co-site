@@ -1,15 +1,18 @@
-SAILLARD & CO – V19
+SAILLARD & CO — SITE V20 FINAL
 
-Refonte visuelle globale :
-- proportions typographiques rééquilibrées
-- page large sans effet étiré
-- services sur fond sable/beige
-- secteur et méthode sur fond bleu-gris
-- carte entièrement refaite avec périmètre bleu continu
-- bloc confiance renforcé
-- contact non blanc
-- pages services densifiées et recolorées
-- lien Rénovation mène à la vraie page rénovation
+Version finalisée à partir de la V19.
 
-Mise en ligne : décompresser, envoyer tous les fichiers sur GitHub, Commit changes, attendre 1 à 3 minutes, puis Cmd + Shift + R.
-Ne pas supprimer le fichier google*.html déjà présent.
+Principales corrections :
+- bandeau urgence entièrement reproportionné ;
+- Lunel / Montpellier / Nîmes désormais lisibles dans le bandeau rouge ;
+- identité Saillard & Co agrandie et harmonisée ;
+- typographie globale rééquilibrée pour écrans larges et mobiles ;
+- « Nos services » et les repères de section agrandis ;
+- zones trop blanches remplacées par des fonds crème / gris bleuté ;
+- ancienne carte SVG supprimée et remplacée par une vraie carte OpenStreetMap ;
+- bloc « Pourquoi nous faire confiance » entièrement retravaillé ;
+- contact et bas de page harmonisés ;
+- pages de services reproportionnées et harmonisées avec l’accueil ;
+- contrôle des liens HTML locaux et des balises essentielles.
+
+Publication GitHub Pages : décompresser puis remplacer le contenu du dépôt par ces fichiers.
