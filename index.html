@@ -1,317 +1,179 @@
 <!doctype html><html lang="fr"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#071d3a">
+<meta name="theme-color" content="#082844">
 <title>Dépannage urgence Lunel & Montpellier | Saillard & Co</title>
 <meta name="description" content="Dépannage habitat à Lunel, Montpellier et Nîmes : recherche de fuite, chauffe-eau, WC, débouchage, petite panne électrique, dégâts des eaux et rénovation intérieure.">
 <meta name="robots" content="index,follow"><link rel="canonical" href="https://saillardco-bit.github.io/saillard-co-site/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Saillard & Co – Dépannage habitat", "telephone": "+33603752324", "email": "saillard.co@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lunel", "postalCode": "34400", "addressCountry": "FR"}, "areaServed": ["Lunel", "Montpellier", "Nîmes"], "url": "https://saillardco-bit.github.io/saillard-co-site/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Saillard & Co – Dépannage habitat", "telephone": "+33603752324", "email": "saillard.co@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lunel", "postalCode": "34400", "addressCountry": "FR"}, "areaServed": ["Lunel", "Montpellier", "Nîmes"], "url": "https://saillardco-bit.github.io/saillard-co-site/", "description": "Dépannage habitat : recherche de fuite, chauffe-eau, WC, débouchage, électricité et rénovation intérieure à Lunel, Montpellier et Nîmes."}</script>
 <style>
 :root{
-  --navy:#071d3a;
-  --navy2:#0a3150;
-  --ink:#071b35;
-  --muted:#5f6d7a;
-  --red:#ef2f24;
-  --red-dark:#d91f17;
-  --blue:#58adff;
-  --soft:#f4f7f8;
-  --line:#dce4e9;
-  --green:#20ad60;
+  --navy:#082844;
+  --navy2:#0d3d59;
+  --ink:#10253a;
+  --muted:#5d6c79;
+  --red:#e7281f;
+  --red2:#c91d17;
+  --sand:#f6f0e6;
+  --soft:#f6f8f8;
+  --line:#d9e1e4;
+  --gold:#e3b55f;
+  --green:#1fad62;
   --white:#fff;
-  --shadow:0 12px 36px rgba(6,29,58,.10);
+  --shadow:0 16px 42px rgba(7,35,60,.12);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  color:var(--ink);
-  background:#fff;
-  line-height:1.48;
-}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.45}
 a{color:inherit;text-decoration:none}
-img{width:100%;display:block}
-.container{width:min(1280px,calc(100% - 48px));margin:auto}
+img{display:block;width:100%}
+.container{width:min(1240px,calc(100% - 42px));margin:auto}
 
-/* Emergency strip */
-.emergency{
-  background:linear-gradient(90deg,var(--red-dark),var(--red));
-  color:#fff;
-}
-.emergency .container{
-  min-height:46px;
-  display:flex;align-items:center;justify-content:center;
-  gap:28px;font-size:16px;font-weight:900;text-align:center;
-}
-.emergency .places{font-weight:750;opacity:.95}
+/* emergency strip */
+.emergency{background:linear-gradient(90deg,var(--red2),var(--red));color:#fff;box-shadow:0 4px 14px rgba(201,29,23,.23)}
+.emergency .container{min-height:54px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px}
+.emergency-icon{font-size:27px}
+.emergency-main{font-size:18px;font-weight:950;letter-spacing:-.01em}
+.emergency-sub{font-size:13px;font-weight:700;opacity:.95;text-align:right}
+.emergency-phone{display:inline-flex;align-items:center;gap:9px;border:2px solid rgba(255,255,255,.8);border-radius:999px;padding:8px 16px;font-size:18px;font-weight:950;background:rgba(255,255,255,.08)}
 
-/* Header */
-.header{
-  background:#fff;position:sticky;top:0;z-index:30;
-  box-shadow:0 1px 0 #e8edf0;
-}
-.header-row{
-  min-height:76px;
-  display:grid;
-  grid-template-columns:280px 1fr 220px;
-  align-items:center;gap:24px;
-}
-.brand{
-  font-size:29px;font-weight:950;letter-spacing:-.045em;line-height:.95;
-}
-.brand small{
-  display:block;margin-top:7px;font-size:12px;font-weight:900;
-  letter-spacing:.12em;color:#3f5364;
-}
-.nav{display:flex;justify-content:center;gap:35px;font-size:16px;font-weight:800}
-.nav a{padding:26px 0 20px;border-bottom:3px solid transparent}
+/* header */
+.header{background:#fff;position:sticky;top:0;z-index:40;border-bottom:1px solid #edf0f2}
+.header-row{min-height:82px;display:grid;grid-template-columns:280px 1fr 190px;align-items:center;gap:22px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:700;letter-spacing:-.035em;line-height:.95}
+.brand small{display:block;margin-top:7px;font-family:Inter,system-ui,sans-serif;font-size:12px;letter-spacing:.16em;font-weight:900;color:#344b5e}
+.nav{display:flex;justify-content:center;gap:32px;font-size:15px;font-weight:850}
+.nav a{padding:28px 0 22px;border-bottom:3px solid transparent}
 .nav a:hover,.nav a.active{color:var(--red);border-bottom-color:var(--red)}
-.head-phone{
-  background:var(--navy);color:#fff;padding:13px 18px;border-radius:9px;
-  font-weight:950;font-size:17px;text-align:center;box-shadow:var(--shadow)
-}
+.quote-top{background:var(--sand);border:1px solid #eadfce;border-radius:12px;padding:12px 14px;font-size:14px;font-weight:900;text-align:center}
+.quote-top small{display:block;font-weight:650;color:#6e7b86;margin-top:2px}
 
-/* Hero - rebuilt to match approved visual */
-.hero{
-  background:var(--navy);
-  color:#fff;
-  overflow:hidden;
-}
-.hero-grid{
-  display:grid;grid-template-columns:48% 52%;
-  min-height:455px;
-}
-.hero-copy{
-  position:relative;padding:38px 42px 28px 0;
-  display:flex;flex-direction:column;justify-content:center;
-}
-.hero-copy:before{
-  content:"";position:absolute;inset:0 -80px 0 -100vw;
-  background:
-    radial-gradient(circle at 86% 30%,rgba(88,173,255,.08),transparent 30%),
-    linear-gradient(110deg,#06192f,#082845 82%,rgba(8,40,69,.7));
-  z-index:0;
-}
-.hero-copy > *{position:relative;z-index:1}
-.hero-kicker{
-  font-size:14px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;
-  margin-bottom:12px;color:#fff;
-}
-.hero h1{
-  margin:0 0 12px;
-  font-size:clamp(44px,4.7vw,68px);
-  line-height:.98;letter-spacing:-.055em;font-weight:950;
-}
-.hero h1 em{font-style:normal;color:var(--blue)}
-.hero-text{
-  font-size:18px;color:#fff;max-width:660px;margin:0 0 18px
-}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:4px}
-.cta{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:66px;padding:11px 24px;border-radius:9px;font-weight:950
-}
-.cta-call{background:var(--red);color:#fff;min-width:275px}
-.cta-call strong{font-size:20px;display:block}
-.cta-call span{font-size:13px;display:block;font-weight:800}
-.cta-quote{background:#fff;color:var(--navy);min-width:275px;border:1px solid #dce3e6}
-.cta-quote strong{font-size:17px}
-.cta-quote span{display:block;font-size:13px;color:#536575}
-.hero-trust{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:14px;margin-top:21px;max-width:760px
-}
-.hero-trust div{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:850;color:#fff}
-.hero-trust b{
-  display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;
-  border:2px solid #fff;border-radius:50%;font-size:17px
-}
-.hero-photo{
-  position:relative;
-  min-height:455px;
-  background:#ddd url('hero-artisan.jpg') center/cover no-repeat;
-}
-.hero-photo:after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(90deg,rgba(7,29,58,.12),transparent 28%);
-}
+/* hero */
+.hero{background:var(--navy);color:#fff;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:48% 52%;min-height:500px}
+.hero-copy{position:relative;padding:42px 44px 32px 0;display:flex;flex-direction:column;justify-content:center}
+.hero-copy:before{content:"";position:absolute;inset:0 -90px 0 -100vw;background:linear-gradient(110deg,#061f36 0%,#082f4b 82%,rgba(8,47,75,.68) 100%);z-index:0}
+.hero-copy>*{position:relative;z-index:1}
+.hero-kicker{font-size:13px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;color:#f2cf82;margin-bottom:12px}
+.hero h1{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,4.9vw,69px);line-height:.98;letter-spacing:-.035em;font-weight:700}
+.hero h1 .accent{color:#f3c86f}
+.hero-text{font-size:18px;color:#fff;max-width:660px;margin:0}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0 18px}
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:11px;border-radius:10px;padding:13px 20px;min-height:64px;font-weight:950}
+.cta-call{background:var(--red);color:#fff;min-width:270px;box-shadow:0 10px 25px rgba(231,40,31,.28)}
+.cta-call strong{display:block;font-size:20px}.cta-call span{display:block;font-size:12px;font-weight:750}
+.cta-quote{background:#fff;color:var(--navy);min-width:245px}
+.cta-quote strong{display:block;font-size:17px}.cta-quote span{display:block;font-size:12px;color:#647381;font-weight:650}
+.hero-badges{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px}
+.hero-badge{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:850}
+.hero-badge i{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--gold);font-style:normal;font-size:17px}
+.hero-photo{background:#ddd url('hero-v15.jpg') center/cover no-repeat;min-height:500px;position:relative}
+.hero-photo:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,40,68,.12),transparent 22%)}
 
-/* Services */
-.services{padding:18px 0 20px;background:#fff}
-.section-title-row{
-  display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:12px
-}
-.section-title{
-  font-size:30px;margin:0;font-weight:950;letter-spacing:-.035em
-}
-.see-all{color:var(--red);font-size:14px;font-weight:900}
-.service-grid{
-  display:grid;grid-template-columns:repeat(6,1fr);gap:16px
-}
-.service-card{
-  background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;
-  box-shadow:var(--shadow);transition:.18s ease;height:100%
-}
-.service-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(6,29,58,.15)}
-.service-card a{display:block;height:100%}
-.service-card img{height:130px;object-fit:cover}
-.service-card-body{
-  min-height:88px;padding:11px 12px 13px;position:relative;padding-right:46px
-}
-.service-card h3{margin:0 0 3px;font-size:15px;font-weight:950;line-height:1.1}
-.service-card p{margin:0;color:#33485b;font-size:12px}
-.arrow{
-  position:absolute;right:10px;bottom:15px;
-  width:30px;height:30px;border-radius:50%;
-  display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:950
-}
+/* services */
+.services{padding:28px 0 32px;background:#fff}
+.kicker{font-size:12px;font-weight:950;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:5px}
+.section-head{margin-bottom:18px}
+.section-head h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1.04;letter-spacing:-.025em}
+.section-head p{margin:5px 0 0;color:var(--muted);font-size:16px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:.18s ease}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 22px 52px rgba(7,35,60,.16)}
+.service-card a{display:grid;grid-template-columns:42% 58%;min-height:205px;height:100%}
+.service-card img{height:100%;min-height:205px;object-fit:cover}
+.service-card-body{padding:18px 16px;position:relative;padding-bottom:48px}
+.service-card h3{margin:0 0 8px;font-size:21px;line-height:1.08}
+.service-card p{margin:0;color:#5e6f7c;font-size:14px}
+.arrow{position:absolute;right:14px;bottom:14px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#f1eadf;color:var(--navy);font-weight:950}
 
-/* Sector + trust */
-.local-band{
-  display:grid;grid-template-columns:1.2fr 1fr;
-  background:#fff;border-top:1px solid var(--line)
-}
-.sector{
-  background:linear-gradient(120deg,#082743,#0b3d5b);
-  color:#fff;padding:22px 0
-}
-.sector-inner{
-  width:min(1280px,calc(100% - 48px));margin:auto;
-  display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:center
-}
-.sector-copy h2{margin:0 0 8px;font-size:28px}
-.sector-copy p{margin:0 0 14px;color:#e8f2f6;font-size:15px}
-.sector-btn{
-  display:inline-flex;padding:11px 18px;border:2px solid #fff;border-radius:8px;font-weight:900
-}
-.map{
-  min-height:220px;background:#eaf4f7;border-radius:10px;overflow:hidden;
-  border:1px solid rgba(255,255,255,.22)
-}
-.map svg{display:block;width:100%;height:100%}
-.trust-area{
-  background:#fff;padding:22px 0;border-left:1px solid var(--line)
-}
-.trust-inner{width:min(580px,calc(100% - 34px));margin:auto}
-.trust-area h2{margin:0 0 10px;font-size:24px}
-.trust-list{display:grid;gap:7px;margin-bottom:12px}
-.trust-list div{display:flex;gap:9px;align-items:center;font-size:14px}
-.check{
-  width:19px;height:19px;border-radius:50%;display:grid;place-items:center;
-  background:var(--green);color:#fff;font-size:12px;font-weight:950
-}
-.urgent-box{
-  margin-top:13px;background:#ecf6ff;border-radius:10px;padding:14px;
-  display:flex;align-items:center;justify-content:space-between;gap:12px
-}
-.urgent-box strong{font-size:16px}
-.urgent-button{
-  background:var(--red);color:#fff;border-radius:8px;padding:11px 14px;
-  font-weight:950;white-space:nowrap
-}
+/* middle info */
+.middle{padding:10px 0 28px;background:#fafbfb}
+.middle-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+.sector-card,.method-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.sector-card{display:grid;grid-template-columns:.78fr 1.22fr}
+.sector-copy{padding:24px}
+.sector-copy h2,.method-card h2{font-family:Georgia,"Times New Roman",serif;font-size:31px;line-height:1.05;margin:0 0 9px}
+.sector-copy p{margin:0 0 15px;color:var(--muted);font-size:14px}
+.sector-link{display:inline-flex;align-items:center;gap:8px;background:#f4efe7;border-radius:9px;padding:10px 13px;font-weight:900;font-size:13px}
+.real-map{min-height:300px;border:0;width:100%;height:100%;display:block}
+.method-card{padding:22px}
+.method-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.step{background:#f7f9fa;border:1px solid #e5eaed;border-radius:12px;padding:16px;min-height:180px;position:relative}
+.step-num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:18px;font-weight:950;margin-bottom:11px;box-shadow:0 6px 18px rgba(8,40,68,.16)}
+.step h3{font-size:16px;line-height:1.1;margin:0 0 7px}
+.step p{font-size:13px;color:#62717d;margin:0}
 
-/* Additional sections */
-.section{padding:58px 0}
-.section.soft{background:var(--soft)}
-.section.dark{background:var(--navy);color:#fff}
-.process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.process article{
-  padding:22px;border-radius:14px;background:#fff;border:1px solid var(--line)
-}
-.dark .process article{background:#0c2a49;border-color:#21415e}
-.process h3{margin:0 0 7px;font-size:20px}
-.process p{margin:0;color:var(--muted)}
-.dark .process p{color:#d1dde6}
+/* trust block */
+.trust{background:linear-gradient(120deg,#061f36,#0b3c56);color:#fff;padding:30px 0 34px}
+.trust-grid{display:grid;grid-template-columns:1.05fr 1.95fr;gap:32px;align-items:center}
+.trust-copy h2{font-family:Georgia,"Times New Roman",serif;font-size:36px;line-height:1.05;margin:4px 0 10px}
+.trust-copy p{margin:0;color:#d5e1e7}
+.trust-items{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.trust-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:18px;text-align:center}
+.trust-item i{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;border:2px solid #4ec2ff;font-style:normal;font-size:22px}
+.trust-item strong{display:block;font-size:14px}.trust-item span{display:block;font-size:12px;color:#d1dee5;margin-top:5px}
 
-/* Contact */
-.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}
-.contact-card{
-  background:#fff;border:1px solid var(--line);border-radius:14px;
-  padding:24px;box-shadow:var(--shadow)
-}
-label{display:block;margin:10px 0 5px;font-size:14px;font-weight:900}
-input,select,textarea{
-  width:100%;padding:12px 13px;border:1px solid #ccd7de;border-radius:8px;font:inherit
-}
+/* contact */
+.contact{padding:52px 0;background:#f4f7f8}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px}
+.contact h2{font-family:Georgia,"Times New Roman",serif;font-size:37px;line-height:1.05;margin:0 0 12px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+label{display:block;margin:10px 0 5px;font-size:13px;font-weight:900}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd7dd;border-radius:8px;font:inherit}
 textarea{min-height:105px;resize:vertical}
-.submit{
-  margin-top:13px;border:0;border-radius:8px;background:var(--navy);
-  color:#fff;padding:14px 17px;font-weight:950;font-size:16px
-}
+.submit{margin-top:12px;border:0;border-radius:8px;background:var(--navy);color:#fff;padding:14px 17px;font-size:15px;font-weight:950}
 
-/* Service pages */
-.service-hero{
-  background:linear-gradient(135deg,#071d3a,#0a3150);
-  color:#fff;padding:56px 0
-}
-.service-hero-grid{display:grid;grid-template-columns:1fr .82fr;gap:34px;align-items:center}
-.breadcrumb{color:#c9d8e5;font-size:14px;font-weight:800;margin-bottom:12px}
-.service-hero h1{font-size:clamp(42px,4.5vw,62px);line-height:1;margin:0 0 13px;font-weight:950;letter-spacing:-.045em}
-.service-hero p{font-size:18px;color:#d9e6ef}
+/* subpages */
+.service-hero{background:linear-gradient(135deg,#071f37,#0c3b58);color:#fff;padding:58px 0}
+.service-hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:34px;align-items:center}
+.breadcrumb{color:#cadbe6;font-size:13px;font-weight:800;margin-bottom:12px}
+.service-hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,4.5vw,60px);line-height:1;margin:0 0 14px}
+.service-hero p{font-size:17px;color:#d7e4ec}
 .service-photo{border-radius:14px;overflow:hidden;box-shadow:var(--shadow)}
-.service-photo img{height:340px;object-fit:cover}
-.service-body{background:#eef3f5;padding:58px 0}
+.service-photo img{height:350px;object-fit:cover}
+.service-body{background:#eef3f5;padding:56px 0}
 .service-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:20px}
-.service-panel,.sidebox{border-radius:14px;padding:24px}
-.service-panel{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
-.sidebox{background:var(--navy);color:#fff}
+.service-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:var(--shadow)}
+.sidebox{background:#fff;border:2px solid #dbe6eb;border-radius:14px;padding:24px;box-shadow:var(--shadow)}
 .service-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;list-style:none;padding:0}
-.service-list li{background:#eef5f8;border-radius:9px;padding:12px;font-weight:800}
+.service-list li{background:#edf4f6;border-radius:9px;padding:12px;font-weight:800}
 .notice{margin-top:14px;background:#fff5ef;border-left:4px solid var(--red);padding:14px;border-radius:8px}
-.service-cta{background:#071d3a;color:#fff;padding:42px 0}
+.service-cta{background:#071f37;color:#fff;padding:42px 0}
 .service-cta .container{display:flex;justify-content:space-between;align-items:center;gap:20px}
 
 /* footer */
-.footer{background:#041426;color:#cbd9e5;padding:42px 0 85px}
+.footer{background:#041526;color:#cbd9e5;padding:42px 0 90px}
 .footer-grid{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:28px}
-.footer h3,.footer strong{color:#fff}
-.footer a{display:block;margin:5px 0}
+.footer h3,.footer strong{color:#fff}.footer a{display:block;margin:5px 0}
 .mobilebar{display:none}
 
-@media(max-width:1000px){
-  .header-row{grid-template-columns:240px 1fr 190px}
-  .nav{gap:19px;font-size:14px}
-  .service-grid{grid-template-columns:repeat(3,1fr)}
-  .hero-trust{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:760px){
-  .container{width:min(100% - 22px,1280px)}
-  .emergency .container{font-size:13px;min-height:42px}
-  .emergency .places{display:none}
-  .header-row{grid-template-columns:1fr auto;min-height:68px}
-  .brand{font-size:23px}
-  .brand small{font-size:10px}
-  .nav{display:none}
-  .head-phone{font-size:13px;padding:10px 12px}
-  .hero-grid{grid-template-columns:1fr;min-height:auto}
-  .hero-copy{padding:38px 0}
-  .hero-copy:before{right:-100vw}
-  .hero-photo{min-height:290px}
-  .hero h1{font-size:43px}
-  .hero-actions{display:grid}
-  .cta{min-width:0;width:100%}
-  .hero-trust{grid-template-columns:1fr 1fr}
+@media(max-width:980px){
+  .header-row{grid-template-columns:240px 1fr 170px}
+  .nav{gap:18px;font-size:13px}
   .service-grid{grid-template-columns:1fr 1fr}
-  .sector-inner{grid-template-columns:1fr}
-  .local-band{display:block}
-  .trust-area{border-left:0}
-  .process,.contact-grid,.service-hero-grid,.service-layout{grid-template-columns:1fr}
+  .middle-grid,.trust-grid{grid-template-columns:1fr}
+  .trust-items{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .container{width:min(100% - 20px,1240px)}
+  .emergency .container{grid-template-columns:auto 1fr;min-height:46px}
+  .emergency-main{font-size:14px}.emergency-sub{display:none}.emergency-phone{font-size:14px;padding:6px 10px}
+  .header-row{grid-template-columns:1fr auto;min-height:70px}.brand{font-size:25px}.brand small{font-size:10px}.nav{display:none}.quote-top{font-size:12px;padding:9px 10px}
+  .hero-grid{grid-template-columns:1fr}.hero-copy{padding:38px 0}.hero-copy:before{right:-100vw}.hero-photo{min-height:320px}.hero h1{font-size:44px}
+  .hero-actions{display:grid}.cta{min-width:0;width:100%}.hero-badges{grid-template-columns:1fr}
+  .service-grid{grid-template-columns:1fr}.service-card a{grid-template-columns:40% 60%;min-height:180px}.service-card img{min-height:180px}
+  .sector-card{grid-template-columns:1fr}.real-map{min-height:280px}.method-steps{grid-template-columns:1fr}
+  .trust-items{grid-template-columns:1fr}.contact-grid,.service-hero-grid,.service-layout{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
-  .mobilebar{
-    display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;
-    padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;gap:6px;
-    box-shadow:0 16px 40px rgba(0,0,0,.18)
-  }
-  .mobilebar a{flex:1;text-align:center;padding:11px;border-radius:8px;font-weight:950}
-  .mobilebar .call{background:var(--red);color:#fff}
-  .mobilebar .mail{background:var(--navy);color:#fff}
+  .mobilebar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;gap:6px;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+  .mobilebar a{flex:1;text-align:center;padding:11px;border-radius:8px;font-weight:950}.mobilebar .call{background:var(--red);color:#fff}.mobilebar .mail{background:var(--navy);color:#fff}
 }
 </style></head><body>
 
 <div class="emergency">
   <div class="container">
-    <div>🚨 Dépannage d’urgence 7j/7 selon disponibilité</div>
-    <div class="places">Lunel • Montpellier • Nîmes et alentours</div>
+    <div class="emergency-icon">🚨</div>
+    <div class="emergency-main">Dépannage d’urgence 7j/7 selon disponibilité</div>
+    <a class="emergency-phone" href="tel:+33603752324">☎ 06 03 75 23 24</a>
   </div>
 </div>
 <header class="header">
@@ -324,7 +186,7 @@ textarea{min-height:105px;resize:vertical}
       <a href="index.html#zones">Secteur d’intervention</a>
       <a href="index.html#contact">Contact</a>
     </nav>
-    <a class="head-phone" href="tel:+33603752324">☎ 06 03 75 23 24</a>
+    <a class="quote-top" href="index.html#contact">▣ Demander un devis<small>Réponse rapide</small></a>
   </div>
 </header>
 
@@ -333,92 +195,83 @@ textarea{min-height:105px;resize:vertical}
   <div class="container hero-grid">
     <div class="hero-copy">
       <div class="hero-kicker">PLOMBERIE • ÉLECTRICITÉ • RÉNOVATION</div>
-      <h1>Dépannage et rénovation de l’habitat <em>à Lunel et alentours</em></h1>
-      <p class="hero-text">Un artisan réactif pour vos urgences et vos projets. Intervention rapide à Lunel, Montpellier, Nîmes et communes voisines.</p>
+      <h1>Un artisan local pour vos <span class="accent">dépannages</span> habitat.</h1>
+      <p class="hero-text">Recherche de fuite, plomberie, chauffe-eau, WC, débouchage, petite électricité ou remise en état intérieure. Intervention à Lunel, Montpellier et Nîmes selon disponibilité, avec Montpellier privilégié hors secteur proche.</p>
       <div class="hero-actions">
-        <a class="cta cta-call" href="tel:+33603752324">☎ <span><strong>06 03 75 23 24</strong>Appeler maintenant</span></a>
-        <a class="cta cta-quote" href="#contact">▣ <span><strong>Demander un devis</strong><br>Gratuit et sans engagement</span></a>
+        <a class="cta cta-call" href="tel:+33603752324">☎ <span><strong>06 03 75 23 24</strong>Appel direct – intervention rapide</span></a>
+        <a class="cta cta-quote" href="#contact">▣ <span><strong>Demander un devis</strong>Réponse rapide</span></a>
       </div>
-      <div class="hero-trust">
-        <div><b>✓</b><span>Artisan local<br>Lunel (34)</span></div>
-        <div><b>◷</b><span>Intervention rapide<br>selon disponibilité</span></div>
-        <div><b>▦</b><span>7j/7<br>selon disponibilité</span></div>
-        <div><b>★</b><span>Devis gratuit<br>et conseils</span></div>
+      <div class="hero-badges">
+        <div class="hero-badge"><i>⌖</i><span>Artisan local<br>à Lunel</span></div>
+        <div class="hero-badge"><i>◷</i><span>Urgence 7j/7<br>selon disponibilité</span></div>
+        <div class="hero-badge"><i>◈</i><span>Dépannage et remise<br>en état intérieure</span></div>
       </div>
     </div>
-    <div class="hero-photo" aria-label="Artisan en intervention sous un évier"></div>
+    <div class="hero-photo" aria-label="Artisan en dépannage plomberie"></div>
   </div>
 </section>
 
 <section class="services" id="services">
   <div class="container">
-    <div class="section-title-row"><h2 class="section-title">Nos services de dépannage et rénovation</h2><a class="see-all" href="#services">Voir tous les services →</a></div>
-    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection et réparation</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Panne et remplacement</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="WC et plomberie"><div class="service-card-body"><h3>WC et plomberie</h3><p>Mécanismes, fuites, raccords</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, WC, canalisations</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Pannes, prises, tableau</p><span class="arrow">→</span></div></a></article>
-<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Salle de bain, sols, placo...</p><span class="arrow">→</span></div></a></article></div>
+    <div class="section-head">
+      <div class="kicker">Nos services</div>
+      <h2>Dépannage et rénovation habitat</h2>
+      <p>Un large éventail de services pour répondre à vos urgences et à vos projets, avec un seul interlocuteur de confiance.</p>
+    </div>
+    <div class="service-grid"><article class="service-card"><a href="recherche-fuite-lunel.html"><img src="https://images.pexels.com/photos/34295406/pexels-photo-34295406.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Recherche de fuite"><div class="service-card-body"><h3>Recherche de fuite</h3><p>Détection et réparation de fuites d’eau.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="chauffe-eau-lunel.html"><img src="https://images.pexels.com/photos/7859953/pexels-photo-7859953.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chauffe-eau"><div class="service-card-body"><h3>Chauffe-eau</h3><p>Installation, dépannage et entretien.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="wc-plomberie-lunel.html"><img src="https://images.pexels.com/photos/7545637/pexels-photo-7545637.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="WC & plomberie"><div class="service-card-body"><h3>WC & plomberie</h3><p>Réparation, remplacement et installation.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="debouchage-canalisation-lunel.html"><img src="debouchage-canalisation.jpg" alt="Débouchage canalisation"><div class="service-card-body"><h3>Débouchage canalisation</h3><p>Évier, lavabo, douche, WC, canalisations.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="depannage-electrique-lunel.html"><img src="https://images.pexels.com/photos/5691590/pexels-photo-5691590.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Dépannage électrique"><div class="service-card-body"><h3>Dépannage électrique</h3><p>Petites pannes, tableaux, appareillages.</p><span class="arrow">→</span></div></a></article>
+<article class="service-card"><a href="renovation-interieure-lunel.html"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rénovation intérieure"><div class="service-card-body"><h3>Rénovation intérieure</h3><p>Remise en état, petits travaux, aménagement.</p><span class="arrow">→</span></div></a></article></div>
   </div>
 </section>
 
-<section class="local-band" id="zones">
-  <div class="sector">
-    <div class="sector-inner">
+<section class="middle" id="zones">
+  <div class="container middle-grid">
+    <div class="sector-card">
       <div class="sector-copy">
-        <h2>📍 Notre secteur d’intervention</h2>
-        <p>Priorité Lunel et communes voisines. Déplacements possibles sur Montpellier, Nîmes et alentours selon disponibilité. Montpellier est privilégié hors secteur proche.</p>
-        <a class="sector-btn" href="depannage-montpellier.html">Voir la zone complète →</a>
+        <div class="kicker">Notre secteur d’intervention</div>
+        <h2>Lunel, Montpellier, Nîmes et alentours</h2>
+        <p>Intervention à Lunel et dans les communes voisines, ainsi qu’à Montpellier et Nîmes selon disponibilité. Montpellier est privilégié hors secteur proche.</p>
+        <a class="sector-link" href="depannage-montpellier.html">📍 Voir toutes les communes</a>
       </div>
-      <div class="map">
-        <svg viewBox="0 0 720 300" role="img" aria-label="Carte schématique Lunel Montpellier Nîmes">
-          <rect width="720" height="300" fill="#eaf4f7"/>
-          <path d="M0 235 C130 210 210 250 315 235 C440 215 560 250 720 220 L720 300 L0 300Z" fill="#cfeaf2"/>
-          <path d="M90 55 C210 25 320 50 430 36 C550 22 650 70 660 150 C667 205 590 235 510 228 C430 222 355 205 270 215 C180 225 95 185 76 120 C66 88 72 66 90 55Z" fill="#dfe9df" stroke="#c8d8cd" stroke-width="2"/>
-          <circle cx="315" cy="198" r="11" fill="#2440d7"/><text x="330" y="205" font-size="22" font-weight="800" fill="#071d3a">Montpellier</text>
-          <circle cx="455" cy="195" r="12" fill="#2440d7"/><circle cx="455" cy="195" r="58" fill="none" stroke="#58adff" stroke-width="3" opacity=".65"/>
-          <text x="474" y="202" font-size="22" font-weight="900" fill="#071d3a">Lunel</text>
-          <circle cx="540" cy="98" r="9" fill="#2440d7"/><text x="555" y="105" font-size="19" font-weight="800" fill="#071d3a">Nîmes</text>
-          <text x="270" y="95" font-size="15" fill="#24394b">Sommières</text>
-          <text x="386" y="252" font-size="15" fill="#24394b">Mauguio</text>
-          <text x="548" y="246" font-size="15" fill="#24394b">Aigues-Mortes</text>
-        </svg>
-      </div>
+      <iframe class="real-map" title="Carte réelle du secteur Lunel Montpellier Nîmes"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=3.6500%2C43.5000%2C4.5500%2C43.9500&layer=mapnik&marker=43.6777%2C4.1357"
+        loading="lazy"></iframe>
     </div>
-  </div>
-  <div class="trust-area">
-    <div class="trust-inner">
-      <h2>Pourquoi nous faire confiance ?</h2>
-      <div class="trust-list">
-        <div><span class="check">✓</span> Artisan local et réactif</div>
-        <div><span class="check">✓</span> Intervention rapide selon disponibilité</div>
-        <div><span class="check">✓</span> Travail soigné et durable</div>
-        <div><span class="check">✓</span> Devis gratuit et conseils</div>
-        <div><span class="check">✓</span> Un seul interlocuteur</div>
+
+    <div class="method-card" id="renovation">
+      <div class="kicker">Du dépannage à la remise en état</div>
+      <h2>Notre méthode en 3 étapes</h2>
+      <div class="method-steps">
+        <article class="step"><div class="step-num">1</div><h3>Vous nous contactez</h3><p>Par téléphone ou via le formulaire. Vous expliquez votre problème.</p></article>
+        <article class="step"><div class="step-num">2</div><h3>Nous intervenons rapidement</h3><p>À Lunel et alentours, selon disponibilité.</p></article>
+        <article class="step"><div class="step-num">3</div><h3>Votre problème est résolu</h3><p>Dépannage ou remise en état durable, avec des conseils pour la suite.</p></article>
       </div>
-      <div class="urgent-box"><div><strong>Une urgence ?</strong><br><small>Appelez directement.</small></div><a class="urgent-button" href="tel:+33603752324">☎ Appeler maintenant</a></div>
     </div>
   </div>
 </section>
 
-<section class="section dark" id="renovation">
-  <div class="container">
-    <div class="section-title-row"><h2 class="section-title" style="color:#fff">Du dépannage à la remise en état</h2></div>
-    <div class="process">
-      <article><h3>1. Vous expliquez le problème</h3><p>Fuite, chauffe-eau, WC, canalisation bouchée, panne électrique ou dégât des eaux.</p></article>
-      <article><h3>2. Dépannage et réparation</h3><p>Recherche de la cause et intervention lorsque la situation le permet.</p></article>
-      <article><h3>3. Remise en état si besoin</h3><p>Placo, plafond, peinture, sols ou rénovation intérieure après le sinistre.</p></article>
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-copy">
+      <div class="kicker" style="color:#f0cd78">Pourquoi nous faire confiance ?</div>
+      <h2>Un artisan de proximité, réactif et à l’écoute.</h2>
+      <p>Des interventions soignées et durables, avec un seul interlocuteur pour vos dépannages et travaux dans l’habitat.</p>
+    </div>
+    <div class="trust-items">
+      <div class="trust-item"><i>🤝</i><strong>Artisan local à Lunel</strong><span>Un professionnel de proximité, disponible et réactif.</span></div>
+      <div class="trust-item"><i>★</i><strong>Expérience et savoir-faire</strong><span>Des interventions soignées, durables et toujours adaptées.</span></div>
+      <div class="trust-item"><i>◈</i><strong>Intervention rapide</strong><span>Pour vos urgences et vos projets, selon disponibilité.</span></div>
+      <div class="trust-item"><i>⌂</i><strong>Conseils personnalisés</strong><span>À l’écoute de vos besoins pour des solutions adaptées.</span></div>
     </div>
   </div>
 </section>
 
-<section class="section soft" id="contact">
+<section class="contact" id="contact">
   <div class="container contact-grid">
-    <div>
-      <h2 class="section-title">Demander un rappel ou un devis</h2>
-      <p>Pour une urgence, l’appel reste le moyen le plus rapide. Pour une demande moins urgente, laissez vos coordonnées.</p>
-      <p><strong>Téléphone :</strong> <a href="tel:+33603752324">06 03 75 23 24</a><br><strong>E-mail :</strong> <a href="mailto:saillard.co@gmail.com">saillard.co@gmail.com</a></p>
-    </div>
+    <div><h2>Demander un rappel ou un devis</h2><p>Pour une urgence, appelez directement. Pour une demande moins urgente, laissez vos coordonnées et décrivez votre besoin.</p><p><strong>Téléphone :</strong> <a href="tel:+33603752324">06 03 75 23 24</a><br><strong>E-mail :</strong> <a href="mailto:saillard.co@gmail.com">saillard.co@gmail.com</a></p></div>
     <div class="contact-card">
       <form action="https://formsubmit.co/saillard.co@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="Nouvelle demande depuis le site Saillard & Co"><input type="hidden" name="_captcha" value="false">
@@ -437,10 +290,10 @@ textarea{min-height:105px;resize:vertical}
 <footer class="footer">
   <div class="container footer-grid">
     <div><h3>Saillard & Co – Dépannage habitat</h3><p>Lunel • Montpellier • Nîmes • alentours selon disponibilité.</p><strong>06 03 75 23 24</strong><a href="mailto:saillard.co@gmail.com">saillard.co@gmail.com</a></div>
-    <div><strong>Dépannages</strong><a href="recherche-fuite-lunel.html">Recherche de fuite</a><a href="chauffe-eau-lunel.html">Chauffe-eau</a><a href="wc-plomberie-lunel.html">WC / plomberie</a><a href="debouchage-canalisation-lunel.html">Débouchage</a></div>
+    <div><strong>Dépannages</strong><a href="recherche-fuite-lunel.html">Recherche de fuite</a><a href="chauffe-eau-lunel.html">Chauffe-eau</a><a href="wc-plomberie-lunel.html">WC / plomberie</a><a href="debouchage-canalisation-lunel.html">Débouchage canalisation</a></div>
     <div><strong>Informations</strong><a href="depannage-montpellier.html">Montpellier</a><a href="depannage-nimes.html">Nîmes</a><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Confidentialité</a></div>
   </div>
 </footer>
-<div class="mobilebar"><a class="call" href="tel:+33603752324">☎ Appeler</a><a class="mail" href="#contact">✉ Écrire</a></div>
+<div class="mobilebar"><a class="call" href="tel:+33603752324">☎ Appeler</a><a class="mail" href="index.html#contact">✉ Écrire</a></div>
 
 </body></html>

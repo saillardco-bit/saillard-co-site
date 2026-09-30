@@ -1,26 +1,24 @@
-SAILLARD & CO – V14 MAQUETTE RECONSTRUITE
+SAILLARD & CO – V15
 
-Cette version a été reconstruite de zéro à partir de la maquette visuelle validée.
+Version réelle, codée pour correspondre au visuel validé :
+- bandeau urgence plus visuel avec téléphone
+- header blanc, Saillard & Co plus présent
+- hero bleu marine + photo artisan réelle
+- moins de répétition du numéro
+- CTA appel + devis avec simple mention "Réponse rapide"
+- cartes services beaucoup plus grandes (3 par ligne)
+- toutes les cartes services entièrement cliquables
+- vraie carte OpenStreetMap pour Lunel / Montpellier / Nîmes
+- méthode en 3 étapes sur fond clair pour plus de contraste
+- bloc "Pourquoi nous faire confiance ?" renforcé sur fond bleu nuit
+- photo fournie par vous conservée pour le débouchage
 
-Points principaux :
-- bandeau urgence rouge en haut
-- grand header blanc avec Saillard & Co très lisible
-- hero bleu marine + photo artisan à droite
-- CTA appel rouge + devis blanc
-- 4 preuves sous le hero
-- 6 cartes services compactes, entièrement cliquables
-- photo utilisateur pour le débouchage canalisation
-- secteur d'intervention + petite carte
-- aucun visuel de camionnette
-- moins d'effet commercial, plus artisan
-- pages services harmonisées
-
-Mise en ligne :
+MISE EN LIGNE :
 1. Décompresser le ZIP.
 2. GitHub > Add file > Upload files.
-3. Envoyer TOUS les fichiers, y compris hero-artisan.jpg et debouchage-canalisation.jpg.
+3. Envoyer TOUS les fichiers, dont hero-v15.jpg et debouchage-canalisation.jpg.
 4. Commit changes.
 5. Attendre 1 à 3 minutes.
-6. Recharger avec Cmd + Shift + R.
+6. Cmd + Shift + R.
 
-Ne supprimez pas le fichier google*.html déjà présent sur GitHub.
+Ne supprimez pas le fichier google*.html de validation Search Console déjà présent sur GitHub.
