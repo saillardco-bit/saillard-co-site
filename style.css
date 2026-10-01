@@ -159,4 +159,3 @@ footer a:hover{color:white}
   .mobilebar .btn{padding:11px 10px;font-size:13px}
   footer{padding-bottom:100px}
 }
-.zone-final{background:#071f27;padding:46px 0 58px}.zone-final-head{display:none}.zone-selected{margin:0;border-radius:26px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.08);background:#082d38}.zone-selected img{width:100%;height:auto;display:block}.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}@media(max-width:620px){.zone-final{padding:24px 0}.zone-selected{border-radius:18px}.zone-selected img{min-width:760px;max-width:none;transform:translateX(-8%)} }
