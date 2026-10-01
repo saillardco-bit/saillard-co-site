@@ -65,3 +65,13 @@
 @media(max-width:1000px){.home-v3 .hc-herogrid{gap:28px;grid-template-columns:1.2fr 1fr}.home-v3 .hc-shortcuts{grid-template-columns:1fr}.home-v3 .hc-shortcuts a{padding:10px}.home-v3 .hc-shortcuts small{display:inline;margin-left:8px}.home-v3 .hc-card h3{font-size:21px}.home-v3 .hc-servicehead{padding-right:30%}}
 @media(max-width:760px){.home-v3 .hc-container{width:calc(100% - 36px)}.home-v3 .hc-herogrid{grid-template-columns:1fr}.home-v3 .hc-hero{padding:36px 0}.home-v3 .hc-title{font-size:48px}.home-v3 .hc-intro{font-size:18px}.home-v3 .hc-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.home-v3 .hc-servicehead{padding-right:0}.home-v3 .hc-servicehead:after{opacity:.18;inset:0}.home-v3 .hc-facts{grid-template-columns:1fr 1fr;gap:10px}.home-v3 .hc-navinner{gap:12px}.home-v3 .hc-brand{font-size:20px}.home-v3 .hc-brand small{font-size:9px}.home-v3 .hc-topbar{font-size:17px;line-height:1.6}.home-v3 .hc-cardbody{min-height:210px}}
 @media(max-width:520px){.home-v3 .hc-cards{grid-template-columns:1fr}.home-v3 .hc-title{font-size:42px;letter-spacing:-1.7px}.home-v3 .hc-form{padding:22px}.home-v3 .hc-form h2{font-size:26px}.home-v3 .hc-servicehead h2{font-size:43px}.home-v3 .hc-servicehead p{font-size:18px}.home-v3 .hc-cardbody{min-height:0}.home-v3 .hc-card>img{height:210px}.home-v3 .hc-brand{font-size:17px}.home-v3 .hc-brand small{font-size:8px}.home-v3 .hc-menu .hc-phone{font-size:12px;padding:10px}.home-v3 .hc-checks{line-height:1.8}.home-v3 .hc-eyebrow{font-size:12px}}
+/* Fonds plus présents autour de la carte, des engagements et des questions. */
+.home-v3 .zone-v3{background:linear-gradient(145deg,#c5e3dd,#a6d0cb);color:#0b3440}
+.home-v3 .zone-note{color:#254e57;font-size:17px;line-height:1.6}
+.home-v3 .trust-strip{background:radial-gradient(ellipse at top right,#216369,transparent 65%),#0a3540;color:#fff}
+.home-v3 .trust-strip .urgent-eyebrow{color:#97dfd4}
+.home-v3 .trust2{background:#ffffff0e;border:1px solid #ffffff30;box-shadow:0 12px 28px #001d2520}
+.home-v3 .trust2 b{color:#a4e5dc;font-size:20px}.home-v3 .trust2 p{color:#e0eeee;font-size:16px;line-height:1.5}
+.home-v3 #faq{background:linear-gradient(135deg,#bdddd6,#d4e7df);color:#0b3440}
+.home-v3 #faq details{background:#e8f2ed;border:1px solid #8dbbb1;box-shadow:0 5px 14px #09343f08}
+.home-v3 #faq summary{font-size:18px}.home-v3 #faq details p{font-size:16px;color:#355961}
