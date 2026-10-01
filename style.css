@@ -195,3 +195,24 @@ footer a:hover{color:white}
 
 @media(max-width:900px){.home-v3 .menu a:not(.call){display:none}.home-v3 .urgent-topgrid{grid-template-columns:1fr}.home-v3 .hero-photo{margin:0;height:320px;border-radius:28px}.home-v3 .urgent-cards{grid-template-columns:1fr 1fr;margin-top:20px}.home-v3 .services-head{grid-template-columns:1fr}.home-v3 .complement-grid{grid-template-columns:1fr}.home-v3 .trust-grid2{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.home-v3 .urgent-top{font-size:12px}.home-v3 .mainnav .wrap{min-height:66px}.home-v3 .logo{font-size:19px}.home-v3 .call{padding:9px 11px;font-size:12px}.home-v3 .urgent-hero .wrap{padding-top:36px}.home-v3 .urgent-title{font-size:43px;letter-spacing:-2.3px}.home-v3 .scribble{margin-left:25%;width:180px}.home-v3 .benefits{gap:12px}.home-v3 .benefit{font-size:13px}.home-v3 .urgent-cards{grid-template-columns:1fr}.home-v3 .urgent-card img{height:210px}.home-v3 .services-complement{padding:56px 0}.home-v3 .services-head h2{font-size:41px}.home-v3 .trust-grid2{grid-template-columns:1fr}.home-v3 .zone-v3{padding:55px 0}}
+/* Accueil validé : reproduction visuelle exacte de la maquette choisie */
+.home-v3 .approved-home-top{background:#fffaf4;padding:0;margin:0;overflow:hidden}
+.home-v3 .approved-visual-wrap{position:relative;width:min(1536px,100%);margin:0 auto;line-height:0;background:#fff}
+.home-v3 .approved-visual{display:block;width:100%;height:auto}
+.home-v3 .approved-visual-wrap .hotspot{position:absolute;display:block;z-index:5;border-radius:16px}
+.home-v3 .approved-visual-wrap .recall{left:80.5%;top:1.6%;width:15.2%;height:5.1%}
+.home-v3 .approved-visual-wrap .nav-urg{left:50.2%;top:2.3%;width:7.8%;height:4%}
+.home-v3 .approved-visual-wrap .nav-serv{left:59.0%;top:2.3%;width:7.5%;height:4%}
+.home-v3 .approved-visual-wrap .nav-zone{left:68.0%;top:2.3%;width:7.0%;height:4%}
+.home-v3 .approved-visual-wrap .nav-faq{left:76.0%;top:2.3%;width:5.2%;height:4%}
+.home-v3 .approved-visual-wrap .card-fuite{left:2.1%;top:48.2%;width:23.5%;height:44.8%}
+.home-v3 .approved-visual-wrap .card-chauffe{left:26.7%;top:48.2%;width:23.2%;height:44.8%}
+.home-v3 .approved-visual-wrap .card-wc{left:50.9%;top:48.2%;width:23.2%;height:44.8%}
+.home-v3 .approved-visual-wrap .card-elec{left:75.0%;top:48.2%;width:23.0%;height:44.8%}
+.home-v3 .approved-visual-wrap .hotspot:focus-visible{outline:4px solid #ef3f32;outline-offset:-4px}
+.home-v3 .seo-only{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(1px,1px,1px,1px)!important;white-space:nowrap!important}
+@media(max-width:700px){
+  .home-v3 .approved-visual-wrap{width:100%;overflow-x:auto}
+  .home-v3 .approved-visual{width:100%;min-width:760px}
+  .home-v3 .approved-visual-wrap .hotspot{display:none}
+}
