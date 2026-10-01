@@ -110,3 +110,22 @@
 .home-v3 .hc-cardbody{z-index:1}
 .home-v3 .hc-cardicon{left:20px;top:-28px;width:58px;height:58px;box-sizing:border-box}
 @media(max-width:520px){.home-v3 .hc-cardphoto{height:195px}}
+/* Contact direct et parcours orienté vers l’appel. */
+.home-v3 .hc-herogrid{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr)}
+.home-v3 .hc-title{font-size:clamp(42px,4.1vw,60px)}
+.home-v3 .call-main{box-shadow:0 10px 25px #00000020;font-size:20px!important}
+.home-v3 .direct-reassurance{font-size:16px;color:#d4e9e9;line-height:1.6;margin:17px 0 0;max-width:570px}
+.home-v3 .contact-panel{padding:28px;box-shadow:0 20px 50px #001d2530}
+.home-v3 .contact-panel h2{font-size:29px;margin-top:17px}.home-v3 .contact-panel>p{font-size:16px}
+.home-v3 .contact-number{display:block;color:#0b3440;font-size:clamp(26px,2.5vw,36px);font-weight:850;letter-spacing:-1px;margin:18px 0 12px;white-space:nowrap}
+.home-v3 .contact-call{display:block;font-size:19px;box-shadow:0 7px 20px #ef402b20}
+.home-v3 .contact-panel .contact-area{margin:17px 0;color:#385a62;font-size:15px;text-align:center}
+.home-v3 .contact-assurances{display:grid;gap:8px;border-top:1px solid #d5e5e2;padding:16px 0;color:#215a59;font-size:14px;font-weight:700}
+.home-v3 .callback-details{padding:0;border:1px solid #cadfd9;background:#f0f7f3;border-radius:12px;box-shadow:none}
+.home-v3 .callback-details summary{padding:13px;font-size:15px;cursor:pointer;color:#0b3440;font-weight:800}
+.home-v3 .callback-details form{padding:0 14px 15px}.home-v3 .callback-details label span{font-size:12px;font-weight:400}.home-v3 .callback-details button{font-size:15px}
+.home-v3 .contact-process{padding:60px 0;background:#123e48;color:#fff}.home-v3 .contact-process h2{font-size:clamp(30px,3vw,44px);line-height:1.15;margin:10px 0 30px;letter-spacing:-1px}
+.home-v3 .process-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-bottom:28px}.home-v3 .process-grid>div{border-top:1px solid #ffffff35;padding-top:18px}.home-v3 .process-grid span{color:#98ddd2;font-size:27px;font-weight:850}.home-v3 .process-grid h3{font-size:21px;margin:8px 0}.home-v3 .process-grid p{font-size:17px;color:#d8e8e8;margin:0;line-height:1.6}
+@media(max-width:1000px){.home-v3 .hc-herogrid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.home-v3 .contact-panel{padding:22px}.home-v3 .contact-panel h2{font-size:26px}}
+@media(max-width:760px){.home-v3 .hc-herogrid{grid-template-columns:minmax(0,1fr)}.home-v3 .contact-panel{max-width:520px}.home-v3 .hc-title{font-size:44px}.home-v3 .process-grid{grid-template-columns:1fr;gap:20px}.home-v3 .contact-process{padding:42px 0}.home-v3 .contact-number{font-size:32px}.home-v3 .hc-actions{flex-direction:column;align-items:stretch}.home-v3 .hc-actions a{text-align:center}}
+@media(max-width:520px){.home-v3 .hc-title{font-size:38px}.home-v3 .call-main{font-size:18px!important}.home-v3 .hc-intro{font-size:17px}}
