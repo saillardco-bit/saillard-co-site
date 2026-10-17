@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.saillard-depannage.fr/</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/recherche-fuite.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/chauffe-eau.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/wc.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/electricite.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/degats-des-eaux.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/renovation-interieure.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/mentions-legales.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/politique-confidentialite.html</loc></url>
+  <url><loc>https://www.saillard-depannage.fr/salle-de-bain.html</loc></url>
+</urlset>
